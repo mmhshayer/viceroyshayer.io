@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-center content-center text-center">
     <div>
       <h1>
         viceroyshayer.github.io
@@ -19,5 +19,7 @@ export default Vue.extend({})
 </script>
 
 <style>
-
+  /*
+  flex flex-col justify-center content-center text-center
+  */
 </style>
