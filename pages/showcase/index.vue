@@ -2,7 +2,7 @@
   <div>
 	  <h2>Latest Posts</h2>
 	  <div >
-		  <div v-for="project of list" :key="project">
+		  <div v-for="project of projectList" :key="project">
 			  <nuxt-link :to="{ name: 'showcase-slug', params: { slug: project.slug } }">
 				  <div >
 <!--						<img :src="require(`~/assets/image/${project.img}`)" alt="" /> -->
@@ -21,12 +21,12 @@
 export default {
 	async asyncData( context ) {
     const { $content, params } = context;
-		const list = await $content('showcase', params.slug)
+		const projectList = await $content('showcase', params.slug)
 			.only(['title', 'description', 'img', 'slug'])
 			.sortBy('title', 'asc')
 			.fetch();
 		return {
-			list
+			projectList
 		}
 	}
 }
