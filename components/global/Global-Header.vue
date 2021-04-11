@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row items-center justify-center py-10 bg-red-700">
+  <header class="flex flex-row items-center justify-center">
     <nuxt-link to="/">viceroyshayer</nuxt-link>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+  /*
+  apply bg-red-700 at first div to see it in action
+  */
 </style>
