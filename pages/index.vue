@@ -7,6 +7,8 @@
       <div>
         <nuxt-link to="/about">About</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link to="/showcase">showcase</nuxt-link>
+        <nuxt-link to="/blog">blog</nuxt-link>
       </div>
     </div>
   </div>
