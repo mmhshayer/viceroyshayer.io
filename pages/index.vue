@@ -1,7 +1,6 @@
 <template>
-  <div min-h-screen flex justify-center items-center text-center mx-auto>
+  <div>
     <div>
-      <Logo />
       <h1>
         viceroyshayer.github.io
       </h1>
