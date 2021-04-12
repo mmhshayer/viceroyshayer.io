@@ -5,9 +5,6 @@
         viceroyshayer.github.io
       </h1>
       <div>
-        <Menu-Button />
-      </div>
-      <div>
         <nuxt-link to="/about">About</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
         <nuxt-link to="/showcase">showcase</nuxt-link>
