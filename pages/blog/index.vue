@@ -8,7 +8,7 @@
         <p>I dont post very often. But when I do I mean it.</p>
       </section>
     </div>
-
+    <Post-Search />
 	  <div>
 		  <div v-for="post of postList" :key="post">
 			  <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">

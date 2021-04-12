@@ -1,7 +1,7 @@
 <template>
   <div class="post-container">
 	  <nuxt-content :document="post" />
-    <Prev-Next :prev="prev" :next="next" class="" />
+    <Prev-Next :prev="prev" :next="next" class="mt-8" />
   </div>
 </template>
 
