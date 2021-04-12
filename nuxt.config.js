@@ -35,6 +35,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://color-mode.nuxtjs.org/
+    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -62,5 +64,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // https://color-mode.nuxtjs.org/#tailwind-v2
+  colorMode: {
+    classSuffix: '-mode',
   }
 }
