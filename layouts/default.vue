@@ -40,31 +40,5 @@
               sm:max-w-md
     seems to have no effect on phone so far, needs furthur research
   */
-  html {
-    font-family:
-      'Source Sans Pro',
-      -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      'Helvetica Neue',
-      Arial,
-      sans-serif;
-    font-size: 16px;
-    word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-  }
-  /* theme information */
-  .dark-mode body {
-    background-color: #091a28;
-    color: #ebf4f1;
-  }
-  .light-mode body {
-    background-color: #f1e7d0;
-    color: #433422;
-  }
+
 </style>
