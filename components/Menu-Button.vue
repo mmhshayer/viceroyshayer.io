@@ -1,4 +1,38 @@
+<template>
+  <button @click="toggleMenu">
+    <keep-alive>
+    <component :is="menu.componentId" class="w-8 h-8"></component>
+    </keep-alive>
+  </button>
+</template>
 
+<script>
+  import Up from '~/assets/icons/arrow-up.svg?inline'
+  import Down from '~/assets/icons/arrow-down.svg?inline'
+
+  export default {
+    components: {
+      'icon-up': Up,
+      'icon-down': Down,
+    },
+    data () {
+      return {
+        menu: {
+          componentId: `icon-up`,
+        },
+      }
+    },
+    methods: {
+      toggleMenu() {
+        this.menu.componentId = this.menu.componentId === "icon-up" ? "icon-down" : "icon-up";
+      }
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>
 <!--
 note to self -
   1. try making s simple button to scitch component, then add menu funtion to it, them swa ot with svg component
@@ -14,4 +48,32 @@ note to self -
     },
 
   this works fine but it puts a div on the icon itself, so that makes it had to style it here in this file
+-->
+
+<!--
+
+    components: {
+      'icon-up': Instagram,
+      'icon-down': Reddit,
+    },
+    data () {
+      return {
+        value: Boolean
+      }
+    },
+    computed: {
+      componentId() {
+        if(value) {
+          return 'icon-up';
+        } else {
+          return 'icon-down';
+        }
+      }
+    },
+    methods: {
+      toggleMenu(components) {
+        this.componentId === component;
+      }
+    }
+
 -->
