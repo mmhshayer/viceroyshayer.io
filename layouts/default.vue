@@ -5,7 +5,7 @@
         mx-auto px-4 sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-7xl
       ">
       <div class="mx-auto flex flex-col">
-        <Menu-Button class="fixed z-40 self-center"/>
+        <Menu-Button class="fixed self-center"/>
         <Nuxt class="min-h-screen mb-5"/>
         <Global-Footer />
       </div>
