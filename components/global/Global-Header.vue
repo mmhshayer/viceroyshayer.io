@@ -1,5 +1,6 @@
 <template>
   <header class="flex flex-row items-center justify-center" :class="{ 'scrolled': !view.atTopOfPage }">
+    <Theme-Switch />
     <nuxt-link to="/">viceroyshayer</nuxt-link>
   </header>
 </template>
