@@ -12,7 +12,7 @@
         <span>Made by <a href="https://github.com/viceroyshayer" rel="noopener" target="_blank">viceroyshayer</a></span>
       </div>
       <div class="mb-8 text-sm text-gray-500 dark:text-gray-400">
-        <a href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
+        <a href="https://github.com/viceroyshayer">
           Tailwind NUxtjs Theme
         </a>
       </div>

@@ -47,6 +47,9 @@
     font-family: Typeface;
     font-size: 200%;
   }
+  #header-title:hover {
+    color: silver;
+  }
   #header-bar {
     background: var(--background-color);
     color: var(--primary-color);
