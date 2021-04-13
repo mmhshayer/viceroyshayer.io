@@ -11,11 +11,11 @@
 <script>
   export default {
     data () {
-        return {
-            view: {
-                atTopOfPage: true
-            }
+      return {
+        view: {
+            atTopOfPage: true
         }
+      }
     },
 
     beforeMount () {
@@ -23,13 +23,13 @@
     },
 
     methods: {
-        handleScroll(){
-            if(window.pageYOffset>0){
-                if(this.view.atTopOfPage) this.view.atTopOfPage = false
-            }else{
-                if(!this.view.atTopOfPage) this.view.atTopOfPage = true
-            }
+      handleScroll(){
+        if(window.pageYOffset>0){
+            if(this.view.atTopOfPage) this.view.atTopOfPage = false
+        }else{
+            if(!this.view.atTopOfPage) this.view.atTopOfPage = true
         }
+      }
     }
   }
 </script>
