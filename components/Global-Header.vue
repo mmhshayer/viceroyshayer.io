@@ -13,7 +13,7 @@
     data () {
       return {
         view: {
-            atTopOfPage: true
+          atTopOfPage: true
         }
       }
     },
@@ -25,9 +25,9 @@
     methods: {
       handleScroll(){
         if(window.pageYOffset>0){
-            if(this.view.atTopOfPage) this.view.atTopOfPage = false
+          if(this.view.atTopOfPage) this.view.atTopOfPage = false
         }else{
-            if(!this.view.atTopOfPage) this.view.atTopOfPage = true
+          if(!this.view.atTopOfPage) this.view.atTopOfPage = true
         }
       }
     }
