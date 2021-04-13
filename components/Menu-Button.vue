@@ -7,10 +7,12 @@
     </button>
 
     <div class="z-40 h-screen hidden" :class="{'makeVisible': !menu.isHidden}" >
-      <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
-      <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
-      <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
-      <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
+      <div class="flex flex-col w-full items-center justify-center">
+        <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
+        <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
+        <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
+        <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
+      </div>
     </div>
   </div>
 </template>
