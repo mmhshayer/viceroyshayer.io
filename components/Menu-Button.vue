@@ -6,8 +6,8 @@
       </keep-alive>
     </button>
 
-    <div class="z-40 h-screen hidden" :class="{'makeVisible': !menu.isHidden}" >
-      <div class="flex flex-col w-full items-center justify-center">
+    <div class="z-40 h-screen hidden" :class="{'makeVisible': !menu.isHidden}">
+      <div class="flex flex-col w-full justify-start pt-20" id="menu-items">
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
         <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
         <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
@@ -55,6 +55,21 @@
     background: var(--background-color);
     opacity: 90%;
     display: inherit;
+  }
+  #menu-items a {
+	 display: block;
+	 font-size: 2em;
+	 text-decoration: none;
+	 padding: 10px 0;
+	 text-align: center;
+	 color: var(--primary);
+	 font-weight: bold;
+	 transition: all 0.2s ease-in-out;
+	 text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+  #menu-items a:hover {
+    font-size: 3em;
+    color: blueviolet;
   }
 </style>
 <!--
