@@ -1,6 +1,6 @@
 <template>
   <header class="w-full flex flex-col h-auto">
-    <div class="flex flex-row items-center justify-center p-8" :class="{ 'scrolled': !view.atTopOfPage }">
+    <div class="flex flex-row items-center justify-center p-8" id="header-bar" :class="{ 'scrolled': !view.atTopOfPage }">
       <Theme-Switch />
       <nuxt-link to="/" id="header-title">viceroyshayer</nuxt-link>
     </div>
@@ -46,5 +46,9 @@
   #header-title {
     font-family: Typeface;
     font-size: 200%;
+  }
+  #header-bar {
+    background: var(--background-color);
+    color: var(--primary-color);
   }
 </style>

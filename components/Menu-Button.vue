@@ -52,7 +52,8 @@
     outline: none;
   }
   .makeVisible {
-    @apply bg-yellow-500;
+    background: var(--background-color);
+    opacity: 90%;
     display: inherit;
   }
 </style>

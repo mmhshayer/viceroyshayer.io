@@ -19,9 +19,8 @@
     }
   }
   #down {
-    color: red;
-    stroke: gold;
-    fill: gold;
+    stroke: var(--on-background-color);
+    fill: var(--primary-color);
   }
 
   #down:hover {

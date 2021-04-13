@@ -18,12 +18,12 @@ html {
 }
 /* theme information */
 .dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 .light-mode body {
-  background-color: #f1e7d0;
-  color: #433422;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 @font-face {
@@ -32,4 +32,14 @@ html {
   font-weight: normal;
   font-display: swap;
   src: url('~assets/fonts/Celestial-Typeface.ttf') format('truetype');
+}
+
+:root {
+  --background-color: #ebf4f1;
+  --primary-color: #091a28;
+}
+
+.dark-mode {
+  --background-color: #091a28;
+  --primary-color: #ebf4f1;
 }
