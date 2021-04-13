@@ -18,8 +18,8 @@
 </template>
 
 <script>
-  import Up from '~/assets/icons/arrow-up.svg?inline'
-  import Down from '~/assets/icons/arrow-down.svg?inline'
+  import Up from './svg/Logo-Arrow-Up'
+  import Down from './svg/Logo-Arrow-Down'
 
   export default {
     components: {
