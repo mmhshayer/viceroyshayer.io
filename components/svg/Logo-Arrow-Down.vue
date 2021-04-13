@@ -1,5 +1,5 @@
 <template>
-  <svg class="appearAnimation" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <svg class="appearAnimation" version="1.1" id="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 345.942 345.942" style="enable-background:new 0 0 345.942 345.942;" xml:space="preserve">
 <g>
 	<g>
@@ -68,4 +68,14 @@
       opacity: 0;
     }
   }
+  #down {
+    stroke: gold;
+    fill: gold;
+  }
+
+  #down:hover {
+    stroke: silver;
+    fill: silver;
+  }
+
 </style>

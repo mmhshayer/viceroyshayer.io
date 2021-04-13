@@ -1,5 +1,5 @@
 <template>
-  <svg class="appearAnimation" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <svg class="appearAnimation" id="up" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 345.52 345.52" style="enable-background:new 0 0 345.52 345.52;" xml:space="preserve">
 <g>
 	<g>
@@ -64,18 +64,14 @@
     }
   }
 
-  #moon {
+  #up {
     stroke: gold;
     fill: gold;
   }
 
-  #moon:hover {
+  #up:hover {
     stroke: silver;
     fill: silver;
   }
 
-  .dark-mode body #moon {
-    vertical-align: middle;
-    display: none
-  }
 </style>

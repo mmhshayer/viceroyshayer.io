@@ -28,8 +28,12 @@
     fill: silver;
   }
 
+
+</style>
+
+<!--
   .dark-mode body #moon {
     vertical-align: middle;
     display: none
   }
-</style>
+-->

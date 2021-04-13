@@ -36,7 +36,8 @@
     fill: gray;
   }
 
-  .light-mode body #sun {
-    display: none
-  }
 </style>
+
+ <!--   .light-mode body #sun {
+    display: none
+  } -->
