@@ -6,7 +6,7 @@
       </keep-alive>
     </button>
 
-    <div class="z-40 h-screen invisible" :class="{'makleVisible': !menu.hidden}" >
+    <div class="z-40 h-screen hidden" :class="{'makeVisible': !menu.isHidden}" >
       <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
       <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
       <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
@@ -28,18 +28,18 @@
       return {
         menu: {
           componentId: `icon-up`,
-          hidden: true,
+          isHidden: true,
         },
       }
     },
     methods: {
       toggleMenu() {
         this.menu.componentId = this.menu.componentId === "icon-up" ? "icon-down" : "icon-up";
-        this.menu.hidden = this.menu.hidden === true ? false : true;
+        this.menu.isHidden = this.menu.isHidden === true ? false : true;
       },
       resetOnClick () {
         this.menu.componentId = 'icon-up';
-        this.menu.hidden = true;
+        this.menu.isHidden = true;
       }
     }
   }
@@ -49,9 +49,9 @@
   button {
     outline: none;
   }
-  .makleVisible {
+  .makeVisible {
     @apply bg-yellow-500;
-    @apply visible;
+    display: inherit;
   }
 </style>
 <!--
