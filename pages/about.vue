@@ -7,7 +7,7 @@
 
 <script>
   export default {
-
+    layout: 'canvas',
   }
 </script>
 
