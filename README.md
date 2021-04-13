@@ -18,3 +18,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+[]  i18n
+[]  font
+v-0.1.3-viceroyshayer.github.io.zip
