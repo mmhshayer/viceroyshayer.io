@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full flex flex-col justify-center">
-    <div class="flex flex-row justify-center" :class="{ 'scrolled': !view.atTopOfPage }">
+  <header class="w-full flex flex-col justify-center h-auto">
+    <div class="flex flex-row justify-center p-8" :class="{ 'scrolled': !view.atTopOfPage }">
       <Theme-Switch />
       <nuxt-link to="/">viceroyshayer</nuxt-link>
     </div>
@@ -39,6 +39,7 @@
   apply bg-red-700 at first div to see it in action
   */
   .scrolled {
+    @apply p-3;
     @apply shadow-xl;
     border-bottom: 0px;
   }
