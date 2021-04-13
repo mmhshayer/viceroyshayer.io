@@ -20,7 +20,7 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 []  i18n
-[]  font
+[x]  font
 v-0.1.4-viceroyshayer.github.io.zip
 
 [] puts lots of error

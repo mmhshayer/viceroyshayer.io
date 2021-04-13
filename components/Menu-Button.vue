@@ -2,7 +2,7 @@
   <div class="w-full flex flex-col h-auto">
     <button @click="toggleMenu" class="z-50 absolute self-center">
       <keep-alive>
-        <component :is="menu.componentId" class="w-8 h-8"></component>
+        <component :is="menu.componentId" class="pt-1 w-6 h-8"></component>
       </keep-alive>
     </button>
 
