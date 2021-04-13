@@ -1,9 +1,18 @@
 <template>
-  <button @click="toggleMenu">
-    <keep-alive>
-    <component :is="menu.componentId" class="w-8 h-8"></component>
-    </keep-alive>
-  </button>
+  <div class="w-full flex flex-col h-auto">
+    <button @click="toggleMenu" class="z-50 absolute self-center">
+      <keep-alive>
+        <component :is="menu.componentId" class="w-8 h-8"></component>
+      </keep-alive>
+    </button>
+
+    <div class="z-40 h-screen invisible" :class="{'makleVisible': !menu.hidden}" >
+      <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
+      <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
+      <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
+      <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -19,12 +28,18 @@
       return {
         menu: {
           componentId: `icon-up`,
+          hidden: true,
         },
       }
     },
     methods: {
       toggleMenu() {
         this.menu.componentId = this.menu.componentId === "icon-up" ? "icon-down" : "icon-up";
+        this.menu.hidden = this.menu.hidden === true ? false : true;
+      },
+      resetOnClick () {
+        this.menu.componentId = 'icon-up';
+        this.menu.hidden = true;
       }
     }
   }
@@ -33,6 +48,10 @@
 <style scoped>
   button {
     outline: none;
+  }
+  .makleVisible {
+    @apply bg-yellow-500;
+    @apply visible;
   }
 </style>
 <!--

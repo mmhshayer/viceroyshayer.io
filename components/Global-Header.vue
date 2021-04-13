@@ -1,10 +1,10 @@
 <template>
-  <header class="w-full flex flex-col justify-center h-auto">
+  <header class="w-full flex flex-col h-auto">
     <div class="flex flex-row justify-center p-8" :class="{ 'scrolled': !view.atTopOfPage }">
       <Theme-Switch />
       <nuxt-link to="/">viceroyshayer</nuxt-link>
     </div>
-    <Menu-Button class="alsolute self-center"/>
+    <Menu-Button />
   </header>
 </template>
 
