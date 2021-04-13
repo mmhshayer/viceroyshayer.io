@@ -25,3 +25,11 @@ html {
   background-color: #f1e7d0;
   color: #433422;
 }
+
+@font-face {
+  font-family: 'Typeface';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('~assets/fonts/Celestial-Typeface.ttf') format('truetype');
+}

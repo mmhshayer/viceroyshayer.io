@@ -21,4 +21,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 []  i18n
 []  font
-v-0.1.3-viceroyshayer.github.io.zip
+v-0.1.4-viceroyshayer.github.io.zip
+
+[] puts lots of error
+
+The warning sources from <div v-for="comment in comments" :key="comment">, where the object comment is used as a key for v-for. The meaning of the warning is quite literal, don't use Object as key.
+
+Use unique primitive value as key, maybe something like comment.id or ${comment.time}${comment.by}

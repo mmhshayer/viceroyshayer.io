@@ -1,8 +1,8 @@
 <template>
   <header class="w-full flex flex-col h-auto">
-    <div class="flex flex-row justify-center p-8" :class="{ 'scrolled': !view.atTopOfPage }">
+    <div class="flex flex-row items-center justify-center p-8" :class="{ 'scrolled': !view.atTopOfPage }">
       <Theme-Switch />
-      <nuxt-link to="/">viceroyshayer</nuxt-link>
+      <nuxt-link to="/" id="header-title">viceroyshayer</nuxt-link>
     </div>
     <Menu-Button />
   </header>
@@ -42,5 +42,9 @@
     @apply p-3;
     @apply shadow-xl;
     border-bottom: 0px;
+  }
+  #header-title {
+    font-family: Typeface;
+    font-size: 200%;
   }
 </style>
