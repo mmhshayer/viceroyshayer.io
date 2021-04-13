@@ -31,7 +31,9 @@
 </script>
 
 <style scoped>
-
+  button {
+    outline: none;
+  }
 </style>
 <!--
 note to self -

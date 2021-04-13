@@ -1,7 +1,10 @@
 <template>
-  <header class="flex flex-row items-center justify-center" :class="{ 'scrolled': !view.atTopOfPage }">
-    <Theme-Switch />
-    <nuxt-link to="/">viceroyshayer</nuxt-link>
+  <header class="w-full flex flex-col justify-center">
+    <div class="flex flex-row justify-center" :class="{ 'scrolled': !view.atTopOfPage }">
+      <Theme-Switch />
+      <nuxt-link to="/">viceroyshayer</nuxt-link>
+    </div>
+    <Menu-Button class="alsolute self-center"/>
   </header>
 </template>
 
