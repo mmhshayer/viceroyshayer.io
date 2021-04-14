@@ -36,10 +36,14 @@ html {
 
 :root {
   --background-color: #ebf4f1;
+  --secondary-background-color: #ddd;
+  --hover-color: #daf;
   --primary-color: #091a28;
 }
 
 .dark-mode {
   --background-color: #091a28;
+  --secondary-background-color: #000;
+  --hover-color: #fad;
   --primary-color: #ebf4f1;
 }
