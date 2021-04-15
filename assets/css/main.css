@@ -47,3 +47,7 @@ html {
   --hover-color: #fad;
   --primary-color: #ebf4f1;
 }
+
+.secondary-bg-color {
+  background-color: var(--secondary-background-color);
+}
