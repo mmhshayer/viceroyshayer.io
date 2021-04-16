@@ -1,10 +1,9 @@
 <template>
   <div class="flex items-center min-h-screen">
     <div class="container mx-auto">
-      <div class="max-w-md mx-auto my-10 p-5 rounded-md shadow-sm secondary-bg-color">
+      <div class="max-w-md mx-auto p-5 rounded-md shadow-sm secondary-bg-color">
         <div class="text-center">
-          <h1 class="my-3 text-3xl font-semibold">Contact Us</h1>
-          <p class="">Fill up the form below to send us a message.</p>
+          <h1 class="my-3 text-3xl font-semibold">Message</h1>
         </div>
         <div class="m-7">
           <form action="https://api.web3forms.com/submit" method="POST" id="form">
