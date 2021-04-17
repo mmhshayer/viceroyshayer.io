@@ -62,3 +62,30 @@ html {
 .cbmh {
   min-height: var(--body-height);
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border: 0px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border: 0px none var(--background-color);
+  border-radius: 5px
+}
+::-webkit-scrollbar-track:hover {
+  background: var(--hover-color);
+}
+::-webkit-scrollbar-track:active {
+  background: var(--background-color);
+}
