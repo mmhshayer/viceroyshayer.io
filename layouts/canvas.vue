@@ -1,7 +1,7 @@
 <template>
-  <body class="pt-28">
+  <body class="cbpt">
     <Global-Header class="fixed top-0 z-50"/>
-    <Nuxt class="min-h-screen"/>
+    <Nuxt class="cbmh"/>
     <Global-Footer/>
   </body>
 </template>

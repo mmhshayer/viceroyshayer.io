@@ -25,7 +25,7 @@ html {
   background-color: var(--background-color);
   color: var(--primary-color);
 }
-
+/* Header theme - temporary */
 @font-face {
   font-family: 'Typeface';
   font-style: normal;
@@ -33,7 +33,7 @@ html {
   font-display: swap;
   src: url('~assets/fonts/Celestial-Typeface.ttf') format('truetype');
 }
-
+/* Throwing Colors to the page with variables */
 :root {
   --background-color: #ebf4f1;
   --secondary-background-color: #ddd;
@@ -47,7 +47,18 @@ html {
   --hover-color: #fad;
   --primary-color: #ebf4f1;
 }
-
+/* class out of variables color */
 .secondary-bg-color {
   background-color: var(--secondary-background-color);
+}
+/* Throwing variables at the page */
+:root {
+  --header-height: 12.5vh;
+  --body-height: 87.5vh;
+}
+.cbpt {
+  padding-top: var(--header-height);
+}
+.cbmh {
+  min-height: var(--body-height);
 }

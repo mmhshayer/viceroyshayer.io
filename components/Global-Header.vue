@@ -1,6 +1,6 @@
 <template>
   <header class="w-full flex flex-col h-auto">
-    <div class="flex flex-row items-center justify-center p-8" id="header-bar" :class="{ 'scrolled': !view.atTopOfPage }">
+    <div class="flex flex-row items-center justify-center hero-height pb-2" id="header-bar" :class="{ 'scrolled': !view.atTopOfPage }">
       <Theme-Switch />
       <nuxt-link to="/" id="header-title">viceroyshayer</nuxt-link>
     </div>
@@ -17,11 +17,9 @@
         }
       }
     },
-
     beforeMount () {
         window.addEventListener('scroll', this.handleScroll);
     },
-
     methods: {
       handleScroll(){
         if(window.pageYOffset>0){
@@ -35,13 +33,13 @@
 </script>
 
 <style scoped>
-  /*
-  apply bg-red-700 at first div to see it in action
-  */
+  .hero-height {
+    height: var(--header-height);
+  }
   .scrolled {
-    @apply p-3;
+    height: calc(100vh/12);
     @apply shadow-xl;
-    border-bottom: 0px;
+    border-bottom: 0px; /*dark-mode*/
   }
   #header-title {
     font-family: Typeface;
