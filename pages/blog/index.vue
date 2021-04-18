@@ -10,6 +10,7 @@
         </p>
       </section>
     </div>
+
     <Post-Search class="mx-16"/>
 	  <div class="mx-16">
 		  <div v-for="post of postList" :key="post">
@@ -28,6 +29,7 @@
 			  </nuxt-link>
 		  </div>
 	  </div>
+    <Paginations />
   </div>
 </template>
 

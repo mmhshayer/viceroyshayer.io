@@ -1,5 +1,12 @@
 <template>
   <div class="post-container">
+    <nav class="border-2">
+      <ul>
+        <li v-for="link of post.toc" :key="link.id">
+          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+        </li>
+      </ul>
+    </nav>
 	  <nuxt-content :document="post" />
     <Prev-Next :prev="prev" :next="next" class="mt-8" />
   </div>
