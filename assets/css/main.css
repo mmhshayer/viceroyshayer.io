@@ -55,12 +55,16 @@ html {
 :root {
   --header-height: 12.5vh;
   --body-height: 87.5vh;
+  --max-body-height: 92vh;
 }
-.cbpt {
+.cbpt { /* Custom Body Padding Top */
   padding-top: var(--header-height);
 }
-.cbmh {
+.cbmh { /* Custom Body Min Height */
   min-height: var(--body-height);
+}
+.cbxh { /* Custom Body Max Height */
+  height: var(--max-body-height);
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
