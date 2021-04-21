@@ -55,7 +55,7 @@ html {
 :root {
   --header-height: 12.5vh;
   --body-height: 87.5vh;
-  --max-body-height: 92vh;
+  --max-body-height: 93vh;
 }
 .cbpt { /* Custom Body Padding Top */
   padding-top: var(--header-height);
