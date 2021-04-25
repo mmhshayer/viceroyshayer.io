@@ -1,12 +1,9 @@
 <template>
-  <div class="post-container">
-    <nav class="border-2">
-      <ul>
-        <li v-for="link of post.toc" :key="link.id">
-          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav>
+  <div class="pt-10">
+    <h1 class=" text-7xl">{{ post.title }}</h1>
+    <sub>{{ post.minread }}</sub>
+    <p>{{ post.description }}</p>
+    <TableOfContent :toc="post.toc"  class="pb-10"/>
 	  <nuxt-content :document="post" />
     <Prev-Next :prev="prev" :next="next" class="mt-8" />
   </div>
@@ -15,7 +12,6 @@
 <script>
 export default {
 	async asyncData({ $content, params }) {
-
 		const post = await $content('blog', params.slug).fetch();
 
     const [prev, next] = await $content('blog')
@@ -23,7 +19,6 @@ export default {
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
       .fetch()
-
 		return {
       post,
       prev,
@@ -39,12 +34,4 @@ export default {
 </script>
 
 <style scoped>
-  .post-container {
-    background: red;
-    margin: 0px;
-    border: 2px solid green;
-    padding: 25px;
-    display: block;
-    max-width: 100%;
-  }
 </style>
