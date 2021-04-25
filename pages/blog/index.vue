@@ -11,40 +11,59 @@
       </section>
     </div>
 
-    <Post-Search class="mx-16"/>
+    <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-10/12 rounded-md h-10 p-5 mt-5 mb-5" />
+
 	  <div class="mx-16">
-		  <div v-for="post of postList" :key="post">
-			  <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
-				  <div>
-						<div class="mb-5 p-5 post-per-entry rounded-lg">
-							<h2 class="text-2xl font-bold leading-8 tracking-tight" >{{ post.title }}</h2>
-							<p class="max-w-none">{{ post.description }}</p>
+      <div v-for="post of postList" :key="post">
+        <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
+          <div>
+            <div class="mb-5 p-5 rounded-lg bg-red-400">
+              <h2 class="text-2xl font-bold leading-8 tracking-tight" >{{ post.title }}</h2>
+              <p class="max-w-none">{{ post.description }}</p>
               <sub>
                 {{ post.date }}
                 <span>&middot;</span>
                 {{ post.minread }}
               </sub>
-						</div>
-				  </div>
-			  </nuxt-link>
-		  </div>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
 	  </div>
-    <Paginations />
+
   </div>
 </template>
 
 <script>
-export default {
-	async asyncData({ $content, params }) {
-		const postList = await $content('blog', params.slug)
-			.only(['title', 'description', 'img', 'slug', 'date', 'minread'])
-			.sortBy('createdAt', 'asc')
-			.fetch();
-		return {
-			postList
-		}
-	}
-}
+  export default {
+    data () {
+      return {
+        query: '',
+        postList: []
+      }
+    },
+    watch: {
+      async query (query) {
+        if (!query) {
+          this.postList = postList
+          return
+        }
+        this.postList = await this.$content('blog')
+          .only(['title', 'slug', 'description'])
+          .search(query)
+          .fetch()
+      }
+    },
+    async asyncData({ $content, params }) {
+      const postList = await $content('blog', params.slug)
+        .only(['title', 'description', 'slug', 'date', 'minread'])
+        .sortBy('title', 'asc')
+        .fetch();
+      return {
+        postList
+      }
+    }
+  }
 </script>
 
 <style scoped]>
