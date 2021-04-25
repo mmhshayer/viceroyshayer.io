@@ -42,7 +42,9 @@
     border-bottom: 0px; /*dark-mode*/
   }
   #header-title {
+    /*
     font-family: Typeface;
+    */
     font-size: 200%;
   }
   #header-title:hover {
