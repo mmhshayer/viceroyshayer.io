@@ -14,7 +14,7 @@
     <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-10/12 rounded-md h-10 p-5 mt-5 mb-5" />
 
 	  <div class="mx-16">
-      <div v-for="post of postList" :key="post">
+      <div v-for="(post, index) of postList" :key="index">
         <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
           <div>
             <div class="mb-5 p-5 rounded-lg bg-red-400">
