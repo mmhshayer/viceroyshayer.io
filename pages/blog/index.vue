@@ -11,7 +11,15 @@
       </section>
     </div>
 
-    <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-10/12 rounded-md h-10 p-5 mt-5 mb-5" />
+    <div class="flex flex-row p-2">
+      <button @click="toggleSort" class="z-50 self-center p-2">
+        <keep-alive>
+          <component :is="componentId" class="pt-1 w-6 h-8"></component>
+        </keep-alive>
+      </button>
+
+      <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-full rounded-md h-10 p-5 mt-5 mb-5" />
+    </div>
 
 	  <div class="mx-16">
       <div v-for="(post, index) of postList" :key="index">
@@ -35,11 +43,19 @@
 </template>
 
 <script>
+  import Asc from '/components/svg/Logo-Sort-Ascending'
+  import Desc from '/components/svg/Logo-Sort-Descending'
+
   export default {
+    components: {
+      'icon-Asc': Asc,
+      'icon-Desc': Desc,
+    },
     data () {
       return {
         query: '',
-        postList: []
+        postList: [],
+        componentId: `icon-Asc`,
       }
     },
     watch: {
@@ -52,6 +68,11 @@
           .only(['title', 'slug', 'description'])
           .search(query)
           .fetch()
+      }
+    },
+    methods: {
+      toggleSort() {
+        this.componentId = this.componentId === "icon-Asc" ? "icon-Desc" : "icon-Asc";
       }
     },
     async asyncData({ $content, params }) {
