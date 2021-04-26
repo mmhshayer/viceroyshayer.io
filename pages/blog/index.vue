@@ -67,6 +67,7 @@
         this.postList = await this.$content('blog')
           .only(['title', 'slug', 'description'])
           .search(query)
+          .sortBy('title', 'asc')
           .fetch()
       }
     },
