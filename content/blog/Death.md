@@ -2,7 +2,7 @@
 id: 0001
 title: Death
 description: Thoughts on Death.
-slug: 
+slug: death
 category: Tarot
 date: 28-April-2021
 minread: 5 min
