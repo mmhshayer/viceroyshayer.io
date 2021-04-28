@@ -1,10 +1,12 @@
 ---
+id: 0002
 title: My first blog post
 description: Welcome to my first blog post using the content module.
 slug: first-post
 alt: my first blog post
 date: 12-April-2021
 minread: 5 min
+category: lorem
 ---
 # My first blog post
 

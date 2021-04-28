@@ -1,7 +1,11 @@
 ---
+id: 0003
 title: My second blog post
 description: Welcome to my second blog post using the content module.
 slug: second-post
+category: lorem
+date: 12-April-2021
+minread: 5 min
 ---
 
 # Mastering VueJS
