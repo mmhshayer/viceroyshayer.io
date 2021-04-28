@@ -11,15 +11,35 @@
       </section>
     </div>
 
-    <div class="flex flex-row p-2">
-      <button @click="toggleSort" class="z-50 self-center p-2">
-        <keep-alive>
-          <component :is="componentId" class="pt-1 w-6 h-8"></component>
-        </keep-alive>
-      </button>
+    <div class="flex flex-col mt-5 mb-5">
 
-      <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-full rounded-md h-10 p-5 mt-5 mb-5" />
+      <div class="flex flex-row p-2">
+        <button @click="toggleSort" class="z-50 self-center p-2">
+          <keep-alive>
+            <component :is="componentId" class="pt-1 w-6 h-8"></component>
+          </keep-alive>
+        </button>
+
+        <input v-model="query" type="search" autocomplete="off" placeholder="Search" class="w-full rounded-md h-10 p-5 " />
+      </div>
+
+      <div class="flex space-x-2 justify-center">
+        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+          Thoughts
+        </div>
+        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+          Opinions
+        </div>
+        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+          How to ?
+        </div>
+        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+          Memories
+        </div>
+      </div>
     </div>
+
+
 
 	  <div class="mx-16">
       <div v-for="(post, index) of postList" :key="index">
