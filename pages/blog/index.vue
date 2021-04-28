@@ -24,16 +24,20 @@
       </div>
 
       <div class="flex space-x-2 justify-center">
-        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+        <div class="bg-blue-200 hover:bg-blue-300 transition duration-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer"
+         @click="toggle($event)">
           Thoughts
         </div>
-        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
-          Opinions
+        <div class="bg-yellow-200 hover:bg-yellow-300 transition duration-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer"
+          @click="toggle($event)">
+          lorem
         </div>
-        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
-          How to ?
+        <div class="bg-green-200 hover:bg-green-300 transition duration-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer"
+          @click="toggle($event)">
+          Tarot
         </div>
-        <div class="bg-blue-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer">
+        <div class="bg-pink-200 hover:bg-pink-300 transition duration-200 py-2 px-3 shadow-sm rounded-sm cursor-pointer"
+          @click="toggle($event)">
           Memories
         </div>
       </div>
@@ -42,7 +46,7 @@
 
 
 	  <div class="mx-16">
-      <div v-for="(post, index) of postList" :key="index">
+      <div v-for="(post, index) of filtered" :key="index">
         <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
           <div>
             <div class="mb-5 p-5 rounded-lg bg-red-400">
@@ -76,6 +80,7 @@
         query: '',
         postList: [],
         componentId: `icon-Asc`,
+        selected: [ "Thoughts", "Opinions", "Tarot", "Memories"],
       }
     },
     watch: {
@@ -94,11 +99,35 @@
     methods: {
       toggleSort() {
         this.componentId = this.componentId === "icon-Asc" ? "icon-Desc" : "icon-Asc";
+      },
+      toggle (event) {
+        const element = event.target;
+        const text = element.textContent.trim()
+        console.log("you clicked: " + text)
+
+        if (this.selected.includes(text)) {
+          element.classList.add("opacity-50")
+          this.selected.splice(this.selected.indexOf(text), 1)
+          console.log(this.selected)
+        } else {
+          element.classList.remove("opacity-50")
+          this.selected.push(text)
+          console.log(this.selected)
+        }
+      }
+    },
+    computed: {
+      filtered () {
+        if (this.selected.length == 0) {
+          return
+        } else {
+          return this.postList.filter( post => this.selected.includes(post.category))
+        }
       }
     },
     async asyncData({ $content, params }) {
       const postList = await $content('blog', params.slug)
-        .only(['title', 'description', 'slug', 'date', 'minread'])
+        .only(['title', 'description', 'slug', 'date', 'minread', 'category'])
         .sortBy('title', 'asc')
         .fetch();
       return {
