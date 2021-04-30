@@ -4,7 +4,7 @@ title: 6th
 description: Thoughts on Death.
 slug: sixth-post
 category: Tarot
-date: 28-April-2021
+date: 17-April-2021
 minread: 5 min
 ---
 #Introduction
