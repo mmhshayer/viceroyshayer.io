@@ -3,7 +3,7 @@ title: My first project
 description: Welcome to my first project using the content module.
 slug: first-project
 alt: my first 
-tag: [dummy]
+tags: [dummy]
 ---
 # My first project
 

@@ -3,7 +3,7 @@ id: 0007
 title: 6th
 description: Thoughts on Death.
 slug: sixth-project
-tag: [alt]
+tags: [alt]
 date: 17-April-2021
 minread: 5 min
 ---

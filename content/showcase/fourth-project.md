@@ -3,7 +3,7 @@ id: 0005
 title: 4th
 description: Thoughts on Death.
 slug: fourth-project
-tag: [alt]
+tags: [alt]
 date: 15-April-2021
 minread: 5 min
 ---

@@ -2,7 +2,7 @@
 title: My third blog project
 description: Welcome to my second blog project using the content module.
 slug: third-project
-tag: [dummy]
+tags: [dummy]
 ---
 
 # Mastering VueJS

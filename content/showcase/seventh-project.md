@@ -3,7 +3,7 @@ id: 0008
 title: 7th
 description: Thoughts on Death.
 slug: seventh-post
-tag: [dummy, alt]
+tags: [dummy, alt]
 date: 2-May-2021
 minread: 5 min
 ---
