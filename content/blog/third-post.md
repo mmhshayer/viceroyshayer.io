@@ -3,7 +3,7 @@ id: 0004
 title: My third blog post
 description: Welcome to my third blog post using the content module.
 slug: third-post
-category: lorem
+category: [lorem]
 date: 14-April-2021
 minread: 5 min
 ---

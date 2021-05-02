@@ -6,7 +6,7 @@ slug: first-post
 alt: my first blog post
 date: 12-April-2021
 minread: 5 min
-category: lorem
+category: [lorem]
 ---
 # My first blog post
 
