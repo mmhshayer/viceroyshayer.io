@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    	  <div class="mx-16">
+    <div class="mx-16">
       <div v-for="(post, index) of postOfThisCategory" :key="index">
         <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
           <div>
@@ -67,7 +67,6 @@ import kebabCase from 'lodash/kebabCase'
           category: { $containsAny: slug }
         })
         .fetch()
-      console.log(postOfThisCategory)
       return {
         slug,
         postOfThisCategory
