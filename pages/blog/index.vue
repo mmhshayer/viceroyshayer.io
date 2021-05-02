@@ -40,6 +40,14 @@
                 <span>&middot;</span>
                 {{ post.minread }}
               </sub>
+              <nuxt-link
+                v-for="category in post.category"
+                :key="category"
+                :to="`/categories/${categorySlug(category)}`"
+                class="rounded-md uppercase text-sm mr-2 px-2 py-1 bg-red-400"
+                >
+                  {{ category }}
+              </nuxt-link>
             </div>
           </div>
         </nuxt-link>
@@ -50,6 +58,7 @@
 </template>
 
 <script>
+import kebabCase from 'lodash/kebabCase'
 
   export default {
     async asyncData({ $content, params }) {
@@ -65,6 +74,11 @@
       return {
         query: '',
       }
+    },
+    methods: {
+      categorySlug(category) {
+        return kebabCase(category)
+      },
     },
     watch: {
       async query (query) {
