@@ -84,6 +84,7 @@ export default {
 
   // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
   sitemap: {
+    hostname: 'https://viceroyshayer.github.io',
     exclude: ['/404'],
     routes() {
       return getRoutes();
