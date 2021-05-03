@@ -1,3 +1,5 @@
+import getRoutes from "./utils/getRoutes";
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -50,6 +52,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -72,5 +76,13 @@ export default {
   // https://color-mode.nuxtjs.org/#tailwind-v2
   colorMode: {
     classSuffix: '-mode',
-  }
+  },
+
+  // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
+  sitemap: {
+    hostname: process.env.BASE_URL,
+    routes() {
+      return getRoutes();
+    },
+  },
 }
