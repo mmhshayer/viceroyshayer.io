@@ -63,7 +63,6 @@ export default {
       } else {
         this.selectedTag = ''
         this.selectedTag = text
-        console.log(this.selectedTag)
       }
     }
   },
@@ -72,8 +71,6 @@ export default {
       if (this.selectedTag.includes("all")) {
         return this.projects = this.projects
       } else {
-        console.log(this.projects)
-
         return this.projects.filter(el => el.tags.includes(this.selectedTag))
       }
     }
