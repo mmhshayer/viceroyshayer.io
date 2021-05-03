@@ -46,6 +46,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -81,8 +83,16 @@ export default {
   // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
   sitemap: {
     hostname: process.env.BASE_URL,
+    exclude: ['/404'],
     routes() {
       return getRoutes();
     },
   },
+
+  // https://github.com/nuxt-community/robots-module
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+    Sitemap: 'https://viceroyshayer.github.io/sitemap.xml',
+  }
 }
