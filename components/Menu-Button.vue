@@ -14,6 +14,7 @@
         -->
         <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
         <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
+        <a href="/assets/doc/mustakim13579@gmail.pdf" download="">Download CV</a>
       </div>
     </div>
   </div>
