@@ -6,12 +6,7 @@
           <h1 class="my-3 text-3xl font-semibold">Message</h1>
         </div>
         <div class="m-7">
-          <form action="https://api.web3forms.com/submit" method="POST" id="form">
-
-            <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE">
-            <input type="hidden" name="subject" value="New Submission from Web3Forms">
-            <input type="checkbox" name="botcheck" id="" style="display: none;">
-
+          <form action="https://formspree.io/f/xdoyaleq" method="POST" id="form">
 
             <div class="mb-6">
               <label for="name" class="block mb-2 text-sm ">Full Name</label>
