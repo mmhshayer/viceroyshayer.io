@@ -19,10 +19,6 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-[]  i18n
-[x]  font
-v-0.1.4-viceroyshayer.github.io.zip
-
 [] puts lots of error
 
 The warning sources from <div v-for="comment in comments" :key="comment">, where the object comment is used as a key for v-for. The meaning of the warning is quite literal, don't use Object as key.
