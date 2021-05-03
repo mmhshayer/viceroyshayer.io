@@ -42,6 +42,8 @@ export default {
     '@nuxtjs/color-mode',
     // https://github.com/nuxt-community/svg-module#readme
     "@nuxtjs/svg",
+    // https://google-analytics.nuxtjs.org/setup
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -94,5 +96,10 @@ export default {
     UserAgent: '*',
     Disallow: '/',
     Sitemap: 'https://viceroyshayer.github.io/sitemap.xml',
+  },
+
+  // https://google-analytics.nuxtjs.org/setup
+  googleAnalytics: {
+    id: 'G-GRFKZLYSKZ'
   }
 }
