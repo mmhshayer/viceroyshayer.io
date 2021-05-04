@@ -48,6 +48,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://github.com/nuxt-community/yandex-metrika-module
+    '@nuxtjs/yandex-metrika',
     // https://github.com/nuxt-community/robots-module
     '@nuxtjs/robots',
     // https://go.nuxtjs.dev/axios
@@ -101,5 +103,17 @@ export default {
   // https://google-analytics.nuxtjs.org/setup
   googleAnalytics: {
     id: 'G-GRFKZLYSKZ'
+  },
+
+  // https://yandex.com/support/metrica/code/counter-initialize.html
+  yandexMetrika: {
+    id: '77652091',
+    webvisor: true,
+    clickmap: true,
+    useCDN: false,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    childIframe: true,
+    trackHash: true,
   }
 }
