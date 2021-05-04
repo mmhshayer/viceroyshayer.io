@@ -54,6 +54,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://www.npmjs.com/package/@nuxtjs/markdownit
+    '@nuxtjs/markdownit',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
@@ -108,5 +110,12 @@ export default {
     accurateTrackBounce: true,
     childIframe: true,
     trackHash: true,
+  },
+
+  // www.npmjs.com/package/@nuxtjs/markdownit
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
   }
 }
