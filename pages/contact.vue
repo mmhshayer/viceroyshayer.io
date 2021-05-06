@@ -59,6 +59,9 @@
 </template>
 
 <script>
+  export default {
+    layout: 'page',
+  }
 </script>
 
 <style scoped>

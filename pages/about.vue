@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    layout: 'canvas',
+    layout: 'page',
   }
 </script>
 

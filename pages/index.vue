@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    layout: 'index',
+    layout: 'page',
   }
 </script>
 
