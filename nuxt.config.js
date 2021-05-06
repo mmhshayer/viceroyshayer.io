@@ -43,6 +43,8 @@ export default {
     '@nuxtjs/color-mode',
     // https://github.com/nuxt-community/svg-module#readme
     "@nuxtjs/svg",
+    // github.com/nuxt-community/imagemin-module
+    '@nuxtjs/imagemin',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -172,5 +174,9 @@ export default {
       }
     },
   },
+
+  imagemin: {
+    enableInDev: true
+  }
 
 }
