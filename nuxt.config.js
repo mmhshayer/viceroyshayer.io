@@ -177,6 +177,8 @@ export default {
 
   imagemin: {
     enableInDev: true
-  }
+  },
+
+  loading: '~/components/Loading.vue'
 
 }
