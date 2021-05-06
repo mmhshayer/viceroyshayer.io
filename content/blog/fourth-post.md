@@ -3,7 +3,7 @@ id: 0005
 title: 4th
 description: Thoughts on Death.
 slug: fourth-post
-category: [Tarot]
+category: [tarot]
 date: 15-April-2021
 minread: 5 min
 ---

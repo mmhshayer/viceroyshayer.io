@@ -3,7 +3,7 @@ id: 0008
 title: 7th
 description: Thoughts on Death.
 slug: seventh-post
-category: [Tarot, lorem]
+category: [tarot, lorem]
 date: 2-May-2021
 minread: 5 min
 ---

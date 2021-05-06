@@ -3,7 +3,7 @@ id: 0007
 title: 6th
 description: Thoughts on Death.
 slug: sixth-post
-category: [Tarot]
+category: [tarot]
 date: 17-April-2021
 minread: 5 min
 ---

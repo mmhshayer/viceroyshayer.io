@@ -3,7 +3,7 @@ id: 0001
 title: Death
 description: Thoughts on Death.
 slug: death
-category: [Tarot]
+category: [tarot]
 date: 28-April-2021
 minread: 5 min
 ---
