@@ -1,32 +1,43 @@
 <template>
   <div class="pt-10">
-    <h1 class=" text-7xl">{{ post.title }}</h1>
-    <sub>{{ post.minread }}</sub>
-    <nuxt-link
-      v-for="category in post.category"
-      :key="category"
-      :to="`/categories/${categorySlug(category)}`"
-      class="rounded-md uppercase text-sm mr-2 px-2 py-1 bg-red-400"
-      >
-        {{ category }}
-    </nuxt-link>
-    <p>{{ post.description }}</p>
+    <div class="text-center">
+    <h1 class="text-7xl">{{ post.title }}</h1>
+    <sub class="leading-3">{{ post.sub }}</sub>
+    <hr class="small leading-3">
+    <div>
+      <sub>{{ post.date }}</sub>
+      <span>|</span>
+      <sub>{{ post.minread }}</sub>
+      <span>|</span>
+      <sub>{{ post.words }}</sub>
+    </div>
+      <nuxt-link
+        v-for="category in post.category"
+        :key="category"
+        :to="`/categories/${categorySlug(category)}`"
+        class="uppercase text-sm"
+        >
+          #{{ category }}
+      </nuxt-link>
+  </div>
 
-    <section class="tableofcontent">
-      <h3>Table of Content</h3>
-      <div id="toc">
-        <ul>
-          <li
-            v-for="link of post.toc"
-            :key="link.id"
-            :class="{ toc2: link.depth === 2, toc3: link.depth === 3 }"
-          >
-            <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </section>
-	  <nuxt-content :document="post" />
+  <section class="border-2">
+    <h1 class="text-center">Table of Content</h1>
+    <ul>
+      <li
+        v-for="link of post.toc"
+        :key="link.id"
+        :class="{ toc2: link.depth === 2, toc3: link.depth === 3 }"
+      >
+        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <p>{{ post.description }}</p>
+    <nuxt-content :document="post" />
+  </section>
     <Prev-Next :prev="prev" :next="next" class="mt-8" />
   </div>
 </template>
@@ -66,6 +77,13 @@ export default {
 </script>
 
 <style scoped>
+  .small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: var(--primary-color);
+    border-radius: 3px;
+  }
   #toc li {
     font-size: 18px;
   }
