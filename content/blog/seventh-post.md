@@ -1,13 +1,14 @@
 ---
 id: 0008
 title: 7th
-description: Thoughts on Death.
+sub: Thoughts on Death.
+description: the second wave of corona virus forced me to gave death a serious look. alter all we all gotta die.
 slug: seventh-post
 category: [tarot, lorem]
 date: 2-May-2021
 minread: 5 min
+words: 458 words
 ---
-#Introduction
 
 There is so much negetivity, fear, disapointment related with death that its hard to see it for what it actually is.
 Thousands of generation from Adam, yet death still haunts us. Still we are surprised when we come across it. Our attitude towards it unsurprisingly reveals deep wisdom on the collective unconciousness. It reflects how as species we never learn form our history, reflection, obvious yet everyone tried to change thw world to something better, better in their view.

@@ -6,6 +6,8 @@ slug: third-post
 category: [lorem]
 date: 14-April-2021
 minread: 5 min
+sub: Thoughts on Death.
+words: 458 words
 ---
 
 # Mastering VueJS
