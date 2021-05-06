@@ -65,6 +65,8 @@ export default {
     '@nuxtjs/feed',
     // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
     '@nuxtjs/sitemap',
+    // https://nuxt-speedkit.grabarzundpartner.dev/setup
+    'nuxt-speedkit'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -175,10 +177,41 @@ export default {
     },
   },
 
+  // github.com/nuxt-community/imagemin-module
   imagemin: {
     enableInDev: true
   },
 
-  loading: '~/components/Loading.vue'
+  // loading component
+  loading: '~/components/Loading.vue',
+
+  // https://nuxt-speedkit.grabarzundpartner.dev/setup
+  speedkit: {
+    speedkit: {
+      detection: {
+        performance: true,
+        browserSupport: true
+      },
+      performance: {
+        device: {
+          hardwareConcurrency: { min: 2, max: 48 },
+          deviceMemory: { min: 2 }
+        },
+        timing: {
+          fcp: 800,
+          dcl: 1200
+        },
+        lighthouseDetectionByUserAgent: false
+      },
+
+      componentAutoImport: false,
+      componentPrefix: undefined,
+
+      lazyOffset: {
+        component: '0%',
+        asset: '0%'
+      }
+    }
+  }
 
 }
