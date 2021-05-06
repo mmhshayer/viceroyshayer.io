@@ -27,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/prism' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,10 +55,10 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://www.npmjs.com/package/@nuxtjs/markdownit
-    '@nuxtjs/markdownit',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/@nuxtjs/markdownit
+    '@nuxtjs/markdownit',
     // https://github.com/nuxt-community/feed-module
     '@nuxtjs/feed',
     // https://www.npmjs.com/package/@nuxtjs/sitemap#installation

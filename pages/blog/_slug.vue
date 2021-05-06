@@ -35,6 +35,9 @@ export default {
       next
     }
 	},
+  mounted() {
+    Prism.highlightAll()
+  },
   methods: {
     categorySlug(category) {
       return kebabCase(category)
