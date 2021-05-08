@@ -6,8 +6,8 @@
       </keep-alive>
     </button>
 
-    <div class="z-40 h-screen hidden" :class="{'makeVisible': !menu.isHidden}">
-      <div class="flex flex-col w-full justify-start pt-20" id="menu-items">
+    <div class="z-40 h-screen w-screen hidden" :class="{'makeVisible': !menu.isHidden}">
+      <div class="flex flex-col w-full justify-center" id="menu-items">
         <nuxt-link to="/" @click.native="resetOnClick">Home</nuxt-link>
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
         <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
@@ -57,6 +57,7 @@
     background: var(--background-color);
     opacity: 90%;
     display: inherit;
+    position: fixed;
   }
   #menu-items a {
 	 display: block;
