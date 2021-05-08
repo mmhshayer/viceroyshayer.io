@@ -3,7 +3,7 @@
     <section class="min-h-screen flex items-stretch text-white ">
         <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
             <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
-            <div class="w-full px-24 z-10 flex space-x-24">
+            <div class="w-full px-24 z-10 flex space-x-24 justify-center">
               <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24"/></a>
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24"/></a>
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/wechat.svg" class="w-24"/></a>
@@ -22,7 +22,7 @@
                 <h1 class="my-3 text-7xl font-semibold">
                   Contact
                 </h1>
-                <a href="mailto:mustakim13579@mail.com">mustakim13579@gmail.com</a>
+                <a href="mailto:mustakim13579@mail.com">{ mustakim13579@gmail.com }</a>
                 <h2 class="text-gray-100 text-2xl">
                   or
                 </h2>
