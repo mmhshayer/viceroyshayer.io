@@ -10,10 +10,8 @@
       <div class="flex flex-col w-full justify-center" id="menu-items">
         <nuxt-link to="/" @click.native="resetOnClick">Home</nuxt-link>
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
-        <nuxt-link to="/blog" @click.native="resetOnClick">Blog</nuxt-link>
         <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
         <a href="/assets/doc/mustakim13579@gmail.pdf" download="">Download CV</a>
-        <nuxt-link to="/showcase" @click.native="resetOnClick">Showcase</nuxt-link>
       </div>
     </div>
   </div>
