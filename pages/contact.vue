@@ -1,8 +1,8 @@
 <template>
   <body>
     <section class="min-h-screen flex items-stretch text-white ">
-        <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
-            <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="lg:flex w-1/2 hidden bg-pink-600 relative items-center">
+            <!-- <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             <div class="w-full px-24 z-10 flex space-x-24 justify-center">
               <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24"/></a>
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24"/></a>
@@ -14,9 +14,9 @@
               <a href="https://twitter.com/viceroyshayer"><img src="~assets/icons/socials/twitter.svg" class="w-10 h-10"/></a>
             </div>
         </div>
-        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0" style="background-color: #161616;">
-            <div class="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
-                <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-indigo-600">
+            <div class="absolute lg:hidden z-10 inset-0 bg-green-500 items-center">
+              <!--  <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             </div>
             <div class="w-full py-6 z-20">
                 <h1 class="my-3 text-7xl font-semibold">
