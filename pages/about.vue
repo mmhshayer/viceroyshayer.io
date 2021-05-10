@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-5 py-20 mx-auto bg-yellow-400 min-h-screen">
+  <div class="container py-20 mx-auto bg-yellow-400 min-h-screen min-w-full">
     <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
       <h1 class="my-3 text-7xl font-semibold">
         About
