@@ -61,6 +61,9 @@
 import kebabCase from 'lodash/kebabCase'
 
   export default {
+    layout () {
+      return 'list'
+    },
     async asyncData({ $content, params }) {
       const postList = await $content('blog', params.slug)
         .only(['title', 'description', 'slug', 'date', 'minread', 'category'])

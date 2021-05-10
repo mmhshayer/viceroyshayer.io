@@ -59,6 +59,9 @@
 import kebabCase from 'lodash/kebabCase'
 
   export default {
+    layout () {
+      return 'list'
+    },
     async asyncData({ $content, params }) {
       const slug = params.slug
       const postOfThisCategory = await $content("blog")
