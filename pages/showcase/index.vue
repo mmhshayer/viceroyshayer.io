@@ -36,6 +36,9 @@
 
 <script>
 export default {
+  layout () {
+    return 'list'
+  },
 	async asyncData( { $content, params } ) {
 		const projects = await $content('showcase', params.slug )
 			.only(['title', 'description', 'slug', 'tags'])
