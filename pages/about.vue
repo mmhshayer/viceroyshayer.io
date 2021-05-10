@@ -19,9 +19,4 @@
 </script>
 
 <style scoped>
-  .index-bg {
-    background-color: blueviolet;
-    height: 100vh;
-    width: 100%;
-  }
 </style>
