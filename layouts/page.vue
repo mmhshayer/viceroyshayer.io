@@ -1,6 +1,6 @@
 <template>
   <body>
-    <Menu-Button />
+    <Menu />
     <Nuxt />
   </body>
 </template>

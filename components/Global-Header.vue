@@ -4,7 +4,7 @@
       <Theme-Switch />
       <nuxt-link to="/" id="header-title">viceroyshayer</nuxt-link>
     </div>
-    <Menu-Button />
+    <Menu />
   </header>
 </template>
 

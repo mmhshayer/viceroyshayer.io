@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="pt-3 mb-5">
-      <h1 class="text-7xl font-bold ">Blog</h1>
+    <div class="pt-3 mb-5 text-center">
+      <h1 class="text-7xl font-bold">Blog</h1>
       <section >
         <sub class="leading-8 font-light text-sm">Personal Opinions</sub>
         <p>
