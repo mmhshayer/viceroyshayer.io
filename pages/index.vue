@@ -1,9 +1,18 @@
 <template>
-  <div ref="main" class="min-w-full min-h-screen bg-cover" id="mainFrame">
-    <div ref="box" @click="clicked()" class="boxShape">
-      <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
+  <div>
+    <div ref="main" class="min-w-full min-h-screen z-30" id="mainFrame">
+      <div ref="box" @click="clicked()" class="boxShape">
+        <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
+      </div>
     </div>
-    <div> Score {{ score }}</div>
+    <div class="top-0 left-0 min-w-full min-h-screen absolute">
+      <div class="leading-8 font-bold bg-red-600">
+        <h1 class="text-3xl">I'm</h1>
+        <h2 class="text-5xl">Mohammad Mustakim Hassan</h2>
+        <p class="text-3xl">Welcome to my Site</p>
+        <sub class="text-xl">You got the fire {{ score }} times</sub>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,7 +48,7 @@
 
 <style>
   #mainFrame {
-    background-image: url("~assets/image/blog-1.svg");
+    background-image: none;
   }
   .boxShape {
     width: 2.5rem;
@@ -47,7 +56,6 @@
     top: -50px;
     left:  -50px;
     position: relative;
-    z-index: 30;
   }
 </style>
 
@@ -59,4 +67,5 @@ created() {
     }, 2000);
   })
 },
+    background-image: url("~assets/image/blog-1.svg");
 -->
