@@ -44,7 +44,16 @@
     top: -50px;
     left:  -50px;
     position: relative;
-    z-index: 50;
+    z-index: 30;
   }
 </style>
 
+<!--
+created() {
+  this.$nextTick(function () {
+    this.interval = setInterval(() => {
+      this.teleport()
+    }, 2000);
+  })
+},
+-->
