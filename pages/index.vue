@@ -1,5 +1,5 @@
 <template>
-  <div ref="main" class="min-w-full min-h-screen">
+  <div ref="main" class="min-w-full min-h-screen bg-cover" id="mainFrame">
     <div ref="box" @click="clicked()" class="boxShape">
       <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
     </div>
@@ -38,6 +38,9 @@
 </script>
 
 <style>
+  #mainFrame {
+    background-image: url("~assets/image/blog-1.svg");
+  }
   .boxShape {
     width: 2.5rem;
     height: 4rem;
