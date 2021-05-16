@@ -1,13 +1,11 @@
 <template>
   <div>
-
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
       <div ref="box" @click="clicked()" class="boxShape">
         <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
       </div>
     </div>
-
-    <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center">
+    <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center bg-purple-600">
       <div class="leading-8 font-bold">
         <h1 class="text-3xl">I'm</h1>
         <h2 class="text-5xl">Mohammad Mustakim Hassan</h2>

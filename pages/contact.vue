@@ -1,7 +1,7 @@
 <template>
   <body>
     <section class="min-h-screen flex items-stretch text-white ">
-        <div class="lg:flex w-1/2 hidden bg-pink-600 relative items-center">
+        <div class="lg:flex w-1/2 hidden bg-pink-500 relative items-center">
             <!-- <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             <div class="w-full px-24 z-10 flex space-x-24 justify-center">
               <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24"/></a>
@@ -14,7 +14,7 @@
               <a href="https://twitter.com/viceroyshayer"><img src="~assets/icons/socials/twitter.svg" class="w-10 h-10"/></a>
             </div>
         </div>
-        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-indigo-600">
+        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-indigo-500">
             <div class="absolute lg:hidden z-10 inset-0 bg-green-500 items-center">
               <!--  <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             </div>
@@ -46,7 +46,7 @@
                     <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
                   </div>
                   <div class="mb-3">
-                    <button type="submit" class="w-full px-3 py-4 bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Send Message</button>
+                    <button type="submit" class="w-full px-3 py-4 bg-indigo-600 rounded-md focus:bg-indigo-900 focus:outline-none">Send Message</button>
                   </div>
                     <p class="text-base text-center" id="result">
                   </p>
