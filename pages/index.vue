@@ -3,7 +3,7 @@
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
       <keep-alive>
         <div ref="box" class="boxShape">
-          <img :src="imgSrc" alt="fire" @click="clicked()">
+          <img ref="img" :src="imgSrc" alt="fire" @click="clicked">
         </div>
       </keep-alive>
     </div>
@@ -45,8 +45,12 @@
         this.imgClicked = false
       },
       clicked() {
-        this.score++;
-        this.imgClicked = true;
+        if (this.imgClicked != true) {
+          this.score++;
+          this.imgClicked = true;
+        } else {
+          this.score--
+        }
       }
     },
     computed: {
