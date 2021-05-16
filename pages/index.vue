@@ -1,9 +1,11 @@
 <template>
   <div>
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
-      <div ref="box" class="boxShape">
-        <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire" @click="clicked()">
-      </div>
+      <keep-alive>
+        <div ref="box" class="boxShape">
+          <img :src="imgSrc" alt="fire" @click="clicked()">
+        </div>
+      </keep-alive>
     </div>
     <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center bg-purple-600">
       <div class="leading-8 font-bold">
@@ -25,6 +27,7 @@
     data() {
       return {
         score: 0,
+        imgClicked: false,
       }
     },
     created() {
@@ -39,9 +42,22 @@
         const theBox = this.$refs.box
         theBox.style.left = Math.random() * (this.$refs.main.clientWidth - theBox.clientWidth) + 'px'
         theBox.style.top = Math.random() * (this.$refs.main.clientHeight - theBox.clientHeight) + 'px'
+        this.imgClicked = false
       },
       clicked() {
-        this.score++
+        this.score++;
+        this.imgClicked = true;
+      }
+    },
+    computed: {
+      imgSrc: function () {
+        while (this.interval < 2000) {
+          if (this.imgClicked == true) {
+            return 'https://media.giphy.com/media/l2YSowMXk0Qu0DFm0/giphy.gif'
+          } else {
+            return 'https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif'
+          }
+        }
       }
     }
   }
@@ -69,4 +85,6 @@ created() {
   })
 },
     background-image: url("~assets/image/blog-1.svg");
+
+    src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif"
 -->
