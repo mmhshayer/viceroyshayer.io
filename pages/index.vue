@@ -1,18 +1,21 @@
 <template>
   <div>
-    <div ref="main" class="min-w-full min-h-screen z-30" id="mainFrame">
+
+    <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
       <div ref="box" @click="clicked()" class="boxShape">
         <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
       </div>
     </div>
-    <div class="top-0 left-0 min-w-full min-h-screen absolute">
-      <div class="leading-8 font-bold bg-red-600">
+
+    <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center">
+      <div class="leading-8 font-bold">
         <h1 class="text-3xl">I'm</h1>
         <h2 class="text-5xl">Mohammad Mustakim Hassan</h2>
         <p class="text-3xl">Welcome to my Site</p>
         <sub class="text-xl">You got the fire {{ score }} times</sub>
       </div>
     </div>
+
   </div>
 </template>
 
