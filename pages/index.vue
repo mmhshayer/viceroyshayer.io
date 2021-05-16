@@ -1,8 +1,8 @@
 <template>
   <div>
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
-      <div ref="box" @click="clicked()" class="boxShape">
-        <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire">
+      <div ref="box" class="boxShape">
+        <img src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif" alt="fire" @click="clicked()">
       </div>
     </div>
     <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center bg-purple-600">
