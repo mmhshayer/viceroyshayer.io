@@ -3,7 +3,7 @@
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
       <keep-alive>
         <div ref="box" class="boxShape">
-          <img ref="img" :src="imgSrc" alt="fire" @click="clicked">
+          <img ref="img" :src="imgSrc" alt="fire" @click="clicked" class="animate-bounce">
         </div>
       </keep-alive>
     </div>
@@ -57,9 +57,9 @@
       imgSrc: function () {
         while (this.interval < 2000) {
           if (this.imgClicked == true) {
-            return 'https://media.giphy.com/media/l2YSowMXk0Qu0DFm0/giphy.gif'
+            return 'https://media.giphy.com/media/3bzQoDRMrhq3BhQMhc/giphy.gif'
           } else {
-            return 'https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif'
+            return 'https://media.giphy.com/media/FmgGMOqDgbMR96YEi6/giphy.gif'
           }
         }
       }
@@ -67,9 +67,10 @@
   }
 </script>
 
-<style>
+<style scoped>
   #mainFrame {
     background-image: none;
+    cursor: crosshair;
   }
   .boxShape {
     width: 2.5rem;
