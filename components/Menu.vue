@@ -6,8 +6,9 @@
       </keep-alive>
     </button>
 
-    <div class="z-40 h-screen w-screen hidden" :class="{'makeVisible': !menu.isHidden}">
+    <div class="z-40 h-screen w-full hidden" :class="{'makeVisible': !menu.isHidden}">
       <div class="flex flex-col w-full justify-center" id="menu-items">
+        <Theme-Switch class="self-center"/>
         <nuxt-link to="/" @click.native="resetOnClick">Home</nuxt-link>
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
         <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
