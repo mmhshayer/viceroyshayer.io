@@ -100,19 +100,9 @@
 <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Soft Skills</h1>
-        <sub>(tag-button)</sub>
-      </div>
-      <div>
-        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Tech Skills</h1>
-        <sub>(tag-button)</sub>
-      </div>
-      <div>
-        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
-        <sub>(tag-button)</sub>
-        <ul class="flex space-x-2">
+        <h1 class="text-7xl font-extrabold leading-none">Skills</h1>
+        <sub>(tag button)</sub>
+        <ul class="py-10 flex space-x-2">
           <li
             v-for="(tag, i) in tags" :key="i"
             class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
@@ -120,6 +110,16 @@
             <nuxt-link to="#"> {{ tag }} </nuxt-link>
           </li>
         </ul>
+      </div>
+      <div>
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-7xl font-extrabold leading-none">Tech Skills</h1>
+        <sub>(tag button)</sub>
+      </div>
+      <div>
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
+        <sub>(tag button)</sub>
       </div>
 
     </div>
