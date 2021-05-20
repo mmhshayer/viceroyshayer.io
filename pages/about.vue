@@ -1,4 +1,5 @@
 <template>
+  <!-- full screner -->
   <div class="bg-yellow-400">
     <div class="min-h-screen min-w-full z-0 grid place-items-center">
       <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
@@ -11,9 +12,9 @@
         <p class="text-gray-500">Freelance Developer</p>
       </div>
     </div>
-
+    <!-- flexed and centered -->
     <div class="pb-20 flex flex-col w-full items-center text-center space-y-20">
-<!-- timeline -->
+      <!-- timeline -->
       <div class="flex flex-col inset-y-5">
         <div>
           <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
@@ -61,7 +62,7 @@
             </ul>
           </div>
       </div>
-<!-- timeline -->
+      <!-- timeline -->
       <div class="flex flex-col inset-y-5">
         <div>
           <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
@@ -97,12 +98,12 @@
             </ul>
           </div>
       </div>
-<!-- tags -->
-      <div>
+      <!-- tags -->
+      <div class="px-20">
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Skills</h1>
         <sub>(tag button)</sub>
-        <ul class="py-10 flex space-x-2">
+        <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
           <li
             v-for="(tag, i) in tags" :key="i"
             class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
@@ -111,11 +112,13 @@
           </li>
         </ul>
       </div>
+      <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Tech Skills</h1>
         <sub>(tag button)</sub>
       </div>
+      <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
@@ -135,9 +138,20 @@
     data () {
       return {
         tags: [
-          'all',
-          'dummy',
-          'alt',
+          'Microsoft Word',
+          'Microsoft Excel',
+          'Microsoft PowerPoint',
+          'Adobe Illustrator',
+          'Adobe Photoshop',
+          'git',
+          'GitHub',
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'NodeJS',
+          'VueJS',
+          'NuxtJS',
+          'Tailwind CSS',
         ],
       }
     },
