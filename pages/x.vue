@@ -116,7 +116,7 @@
           <li
             v-for="(tag, i) in tags" :key="i"
             class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
-            :style="{backgroundColor: randomColor()}">
+            :style="{ backgroundColor: randomColor() }">
             <nuxt-link to="#"> {{ tag }} </nuxt-link>
           </li>
         </ul>
@@ -145,9 +145,8 @@
       randomColor() {
         var lastPick;
         var rand;
-        var back = ["green","blue","gray","yellow","orange","purple","pink"];
-        rand = back[Math.floor(Math.random() * back.length)];
-        rand==lastPick?randomColor():rand;
+        rand = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        rand == lastPick ? randomColor() : rand;
         lastPick = rand;
         return rand;
       }

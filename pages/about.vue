@@ -112,6 +112,14 @@
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
         <sub>(tag-button)</sub>
+        <ul class="flex space-x-2">
+          <li
+            v-for="(tag, i) in tags" :key="i"
+            class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
+            :style="{ backgroundColor: randomColor() }">
+            <nuxt-link to="#"> {{ tag }} </nuxt-link>
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -124,6 +132,25 @@
 <script>
   export default {
     layout: 'page',
+    data () {
+      return {
+        tags: [
+          'all',
+          'dummy',
+          'alt',
+        ],
+      }
+    },
+    methods: {
+      randomColor() {
+        var lastPick;
+        var rand;
+        rand = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        rand == lastPick ? randomColor() : rand;
+        lastPick = rand;
+        return rand;
+      }
+    }
   }
 </script>
 
