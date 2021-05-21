@@ -63,41 +63,7 @@
           </div>
       </div>
       <!-- timeline -->
-      <div class="flex flex-col inset-y-5">
-        <div>
-          <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-7xl font-extrabold leading-none">Work Experiance</h1>
-          <sub>(time-line)</sub>
-        </div>
-        <div class="pt-10 timeline">
-            <ul>
-              <li>
-                <div>
-                    <div class="mb-4 mt-2 font-bold leading-3">2019 September</div>
-                    <div class="font-bold text-3xl">Hubei University of Technology</div>
-                    <sub class="italic md:mb-4">Computer Science</sub>
-                    <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</div>
-                </div>
-              </li>
-              <li>
-                <div>
-                    <div class="mb-4 mt-2 font-bold leading-3">2019 September</div>
-                    <div class="font-bold text-3xl">Hubei University of Technology</div>
-                    <sub class="italic md:mb-4">Computer Science</sub>
-                    <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</div>
-                </div>
-              </li>
-              <li>
-                <div>
-                    <div class="mb-4 mt-2 font-bold leading-3">2019 September</div>
-                    <div class="font-bold text-3xl">Hubei University of Technology</div>
-                    <sub class="italic md:mb-4">Computer Science</sub>
-                    <div class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-      </div>
+      <!-- work experiance -->
       <!-- tags -->
       <div class="px-20">
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
@@ -115,14 +81,93 @@
       <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Tech Skills</h1>
+        <h1 class="text-7xl font-extrabold leading-none">Languages</h1>
         <sub>(tag button)</sub>
+        <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
+          <li>
+            <div class="shadow-lg rounded-xl w-60 md:w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
+                <a href="#" class="w-full h-full block">
+                    <div class="w-full">
+                        <p class="text-gray-700 dark:text-white  text-2xl font-light mb-4">
+                            English
+                        </p>
+                        <div class="flex items-center justify-between text-gray-400 text-sm">
+                            <p>
+                                Listening
+                            </p>
+                            <p>
+                                3/8
+                            </p>
+                        </div>
+                        <div class="w-full h-2 bg-green-100 rounded-full mb-4">
+                            <div class="w-1/3 h-full text-center text-xs text-white bg-green-400 rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-400 text-sm">
+                            <p>
+                                Reading
+                            </p>
+                            <p>
+                                6/10
+                            </p>
+                        </div>
+                        <div class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                            <div class="w-2/3 h-full text-center text-xs text-white bg-indigo-400 rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-400 text-sm">
+                            <p>
+                                Writing
+                            </p>
+                            <p>
+                                2/8
+                            </p>
+                        </div>
+                        <div class="w-full h-2 bg-blue-100 rounded-full mb-4">
+                            <div class="w-1/4 h-full text-center text-xs text-white bg-blue-400 rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-gray-400 text-sm">
+                            <p>
+                                Speaking
+                            </p>
+                            <p>
+                                8/8
+                            </p>
+                        </div>
+                        <div class="w-full h-2 bg-pink-100 rounded-full">
+                            <div class="w-full h-full text-center text-xs text-white bg-pink-400 rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </li>
+
+        </ul>
       </div>
       <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
         <sub>(tag button)</sub>
+        <ul>
+          <li v-for="(lang, index) in languages" :key="index">
+            {{ lang.name }}
+          <div class="flex items-center justify-between text-gray-400 text-sm">
+              <p>
+                  Speaking
+              </p>
+              <p>
+                  {{ lang.speaking }}
+              </p>
+          </div>
+          <div class="w-full h-2 bg-pink-100 rounded-full">
+              <div class="h-full text-center text-xs text-white bg-pink-400 rounded-full" :style="{ width: lang.speaking  }">
+              </div>
+          </div>
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -153,6 +198,24 @@
           'NuxtJS',
           'Tailwind CSS',
         ],
+        languages: [
+          {
+            name: 'English',
+            speaking: '80%'
+          },
+          {
+            name: 'Bangla',
+            speaking: '80%'
+          },
+          {
+            name: 'Mandarin',
+            speaking: '80%'
+          },
+          {
+            name: 'Arabic',
+            speaking: '80%'
+          },
+        ]
       }
     },
     methods: {
