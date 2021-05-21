@@ -83,67 +83,28 @@
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Languages</h1>
         <sub>(tag button)</sub>
-        <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
-          <li>
-            <div class="shadow-lg rounded-xl w-60 md:w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
-                <a href="#" class="w-full h-full block">
-                    <div class="w-full">
-                        <p class="text-gray-700 dark:text-white  text-2xl font-light mb-4">
-                            English
-                        </p>
-                        <div class="flex items-center justify-between text-gray-400 text-sm">
-                            <p>
-                                Listening
-                            </p>
-                            <p>
-                                3/8
-                            </p>
-                        </div>
-                        <div class="w-full h-2 bg-green-100 rounded-full mb-4">
-                            <div class="w-1/3 h-full text-center text-xs text-white bg-green-400 rounded-full">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between text-gray-400 text-sm">
-                            <p>
-                                Reading
-                            </p>
-                            <p>
-                                6/10
-                            </p>
-                        </div>
-                        <div class="w-full h-2 bg-indigo-100 rounded-full mb-4">
-                            <div class="w-2/3 h-full text-center text-xs text-white bg-indigo-400 rounded-full">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between text-gray-400 text-sm">
-                            <p>
-                                Writing
-                            </p>
-                            <p>
-                                2/8
-                            </p>
-                        </div>
-                        <div class="w-full h-2 bg-blue-100 rounded-full mb-4">
-                            <div class="w-1/4 h-full text-center text-xs text-white bg-blue-400 rounded-full">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between text-gray-400 text-sm">
-                            <p>
-                                Speaking
-                            </p>
-                            <p>
-                                8/8
-                            </p>
-                        </div>
-                        <div class="w-full h-2 bg-pink-100 rounded-full">
-                            <div class="w-full h-full text-center text-xs text-white bg-pink-400 rounded-full">
-                            </div>
-                        </div>
+        <ul class="py-10 px-5 md:px-24 lg:px-72 grid grid-cols-2 ld:grid-rows-1 gap-5">
+          <li
+            v-for="(lang, index) in languages" :key="index"
+            class="shadow-lg rounded-xl w-60 md:w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
+              <h3 class="text-gray-700 dark:text-white  text-2xl font-light mb-4"> {{ lang.name }} </h3>
+              <div>
+                <div v-for="(score, index) in lang.scores" :key="index">
+                  <div class="flex items-center justify-between text-gray-400 text-sm">
+                      <p>
+                          Development <!-- fix this -->
+                      </p>
+                      <p>
+                          {{ score }}
+                      </p>
+                  </div>
+                  <div class="w-full h-5 bg-green-100 rounded-full mb-4">
+                    <div class="h-full text-center text-xs text-white bg-green-400 rounded-full" :style="{ width: score }">
                     </div>
-                </a>
-            </div>
+                  </div>
+                </div>
+              </div>
           </li>
-
         </ul>
       </div>
       <!-- tags -->
@@ -155,16 +116,9 @@
           <li v-for="(lang, index) in languages" :key="index">
             {{ lang.name }}
           <div class="flex items-center justify-between text-gray-400 text-sm">
-              <p>
-                  Speaking
-              </p>
-              <p>
-                  {{ lang.speaking }}
-              </p>
-          </div>
-          <div class="w-full h-2 bg-pink-100 rounded-full">
-              <div class="h-full text-center text-xs text-white bg-pink-400 rounded-full" :style="{ width: lang.speaking  }">
-              </div>
+            <div v-for="(index, key, value) in lang.scores" :key="index">
+              {{ key }} - {{ value }}
+            </div>
           </div>
           </li>
         </ul>
@@ -198,22 +152,39 @@
           'NuxtJS',
           'Tailwind CSS',
         ],
+        bands: [
+          'Listening',
+          'Reading',
+          'Writing',
+          'Speaking',
+        ],
         languages: [
           {
             name: 'English',
-            speaking: '80%'
+              scores : [
+                '80%',
+                '80%',
+                '80%',
+                '80%',
+              ]
           },
           {
             name: 'Bangla',
-            speaking: '80%'
+              scores : [
+                '80%'
+              ]
           },
           {
             name: 'Mandarin',
-            speaking: '80%'
+              scores : [
+                '80%'
+              ]
           },
           {
             name: 'Arabic',
-            speaking: '80%'
+              scores : [
+                '80%'
+              ]
           },
         ]
       }
