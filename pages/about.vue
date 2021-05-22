@@ -18,7 +18,7 @@
       <div class="flex flex-col inset-y-5">
         <div>
           <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-7xl font-extrabold leading-none">Education</h1>
+          <h1 class="text-6xl font-extrabold leading-none">Education</h1>
           <sub>(timeline)</sub>
         </div>
         <div class="pt-10 timeline">
@@ -67,7 +67,7 @@
       <!-- tags -->
       <div class="px-20">
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Skills</h1>
+        <h1 class="text-6xl font-extrabold leading-none">Skills</h1>
         <sub>(tag button)</sub>
         <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
           <li
@@ -81,25 +81,25 @@
       <!-- tags -->
       <div>
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Languages</h1>
-        <sub>(tag button)</sub>
-        <ul class="py-10 px-5 md:px-24 lg:px-72 grid grid-cols-2 ld:grid-rows-1 gap-5">
+        <h1 class="text-6xl font-extrabold leading-none">Languages</h1>
+        <sub>(tag line)</sub>
+        <ul class="py-10  grid grid-cols-1 md:grid-cols-2 gap-5">
           <li
-            v-for="(lang, index) in languages" :key="index"
-            class="shadow-lg rounded-xl w-60 md:w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
-              <h3 class="text-gray-700 dark:text-white  text-2xl font-light mb-4"> {{ lang.name }} </h3>
+            v-for="(lang, i) in languages" :key="i"
+            class="shadow-lg rounded-xl w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
+              <h3 class="text-gray-700 dark:text-white text-2xl font-light mb-4"> {{ lang.name }} </h3>
               <div>
-                <div v-for="(score, index) in lang.scores" :key="index">
+                <div v-for="(score, j) in lang.scores" :key="j">
                   <div class="flex items-center justify-between text-gray-400 text-sm">
                       <p>
-                          Development <!-- fix this -->
+                        {{ score.name }}
                       </p>
                       <p>
-                          {{ score }}
+                        {{ score.value }}
                       </p>
                   </div>
                   <div class="w-full h-5 bg-green-100 rounded-full mb-4">
-                    <div class="h-full text-center text-xs text-white bg-green-400 rounded-full" :style="{ width: score }">
+                    <div class="h-full text-center text-xs text-white bg-green-400 rounded-full" :style="{ width: score.value }">
                     </div>
                   </div>
                 </div>
@@ -112,16 +112,6 @@
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
         <sub>(tag button)</sub>
-        <ul>
-          <li v-for="(lang, index) in languages" :key="index">
-            {{ lang.name }}
-          <div class="flex items-center justify-between text-gray-400 text-sm">
-            <div v-for="(index, key, value) in lang.scores" :key="index">
-              {{ key }} - {{ value }}
-            </div>
-          </div>
-          </li>
-        </ul>
       </div>
 
     </div>
@@ -160,31 +150,92 @@
         ],
         languages: [
           {
-            name: 'English',
-              scores : [
-                '80%',
-                '80%',
-                '80%',
-                '80%',
-              ]
-          },
-          {
             name: 'Bangla',
-              scores : [
-                '80%'
-              ]
+            message: 'Native',
+            scores : [
+              {
+                name: 'Listening',
+                value: '100%'
+              },
+              {
+                name: 'Reading',
+                value: '100%'
+              },
+              {
+                name: 'Writing',
+                value: '90%'
+              },
+              {
+                name: 'Speaking',
+                value: '90%'
+              },
+            ]
           },
           {
-            name: 'Mandarin',
-              scores : [
-                '80%'
-              ]
+            name: 'English',
+            message: 'Second Language',
+            scores : [
+              {
+                name: 'Listening',
+                value: '85%'
+              },
+              {
+                name: 'Reading',
+                value: '85%'
+              },
+              {
+                name: 'Writing',
+                value: '85%'
+              },
+              {
+                name: 'Speaking',
+                value: '85%'
+              },
+            ]
           },
           {
-            name: 'Arabic',
-              scores : [
-                '80%'
-              ]
+            name: 'Mandarin Chinese',
+            message: 'Learning',
+            scores : [
+              {
+                name: 'Listening',
+                value: '75%'
+              },
+              {
+                name: 'Reading',
+                value: '75%'
+              },
+              {
+                name: 'Writing',
+                value: '65%'
+              },
+              {
+                name: 'Speaking',
+                value: '65%'
+              },
+            ]
+          },
+          {
+            name: 'Hindi',
+            message: 'Pasively Acquired',
+            scores : [
+              {
+                name: 'Listening',
+                value: '85%'
+              },
+              {
+                name: 'Reading',
+                value: '0%'
+              },
+              {
+                name: 'Writing',
+                value: '0%'
+              },
+              {
+                name: 'Speaking',
+                value: '75%'
+              },
+            ]
           },
         ]
       }
@@ -263,6 +314,37 @@
       background-color: var(--hover-color);
     }
   }
-
-
 </style>
+
+<!--
+        languages: [
+          {
+            name: 'English',
+              scores : [
+                '80%',
+                '80%',
+                '80%',
+                '80%',
+              ]
+          },
+          {
+            name: 'Bangla',
+              scores : [
+                { 'asdc': 'apple' },
+                { 'adc' : 'orange' }
+              ]
+          },
+          {
+            name: 'Mandarin',
+              scores : [
+                '80%'
+              ]
+          },
+          {
+            name: 'Arabic',
+              scores : [
+                '80%'
+              ]
+          },
+        ]
+  -->
