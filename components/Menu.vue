@@ -1,13 +1,13 @@
 <template>
   <div class="w-full flex flex-col h-auto">
-    <button @click="toggleMenu" class="z-50 absolute self-center pt-3">
+    <button @click="toggleMenu" class="z-50 absolute self-center pt-3 menu-botton">
       <keep-alive>
         <component :is="menu.componentId" class="pt-1 w-6 h-8"></component>
       </keep-alive>
     </button>
 
-    <div class="z-40 h-screen w-full hidden" :class="{'makeVisible': !menu.isHidden}">
-      <div class="flex flex-col w-full justify-center" id="menu-items">
+    <div class="z-40 h-screen w-full opacity-90 hidden" :class="{'makeVisible': !menu.isHidden}">
+      <div class="flex flex-col w-full justify-center menu-items">
         <Theme-Switch class="self-center"/>
         <nuxt-link to="/" @click.native="resetOnClick">Home</nuxt-link>
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
@@ -48,17 +48,16 @@
   }
 </script>
 
-<style>
-  button {
+<style scoped>
+  .menu-botton {
     outline: none;
   }
   .makeVisible {
     background: var(--background-color);
-    opacity: 90%;
     display: inherit;
     position: fixed;
   }
-  #menu-items a {
+  .menu-items a {
     display: block;
     font-size: 2em;
     text-decoration: none;
@@ -69,7 +68,7 @@
     transition: all 0.2s ease-in-out;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
   }
-  #menu-items a:hover {
+  .menu-items a:hover {
     font-size: 3em;
     color: blueviolet;
   }

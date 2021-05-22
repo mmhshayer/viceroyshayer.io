@@ -23,12 +23,12 @@
 </script>
 
 <style scoped>
-.loading-enter-active,
-.loading-leave-active {
-  transition: opacity 0.5s;
-}
-.loading-enter,
-.loading-leave-to {
-  opacity: 0;
-}
+  .loading-enter-active,
+  .loading-leave-active {
+    transition: opacity 0.5s;
+  }
+  .loading-enter,
+  .loading-leave-to {
+    opacity: 0;
+  }
 </style>
