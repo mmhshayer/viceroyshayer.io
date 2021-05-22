@@ -108,12 +108,6 @@
         </ul>
       </div>
       <!-- tags -->
-      <div>
-        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-7xl font-extrabold leading-none">Tach I've worked with</h1>
-        <sub>(tag button)</sub>
-      </div>
-
     </div>
 
 
