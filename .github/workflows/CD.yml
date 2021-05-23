@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   deploy:
@@ -32,6 +32,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PAT }}
+          external_repository: viceroyshayer/viceroyshayer.github.io
           publish_branch: main
           publish_dir: ./dist
           user_name: 'github-actions[bot]'
