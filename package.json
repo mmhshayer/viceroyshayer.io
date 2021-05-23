@@ -1,6 +1,5 @@
 {
-  "name": "viceroyshayer.github.io",
-  "version": "1.0.0",
+  "name": "viceroyshayer.io",
   "private": true,
   "scripts": {
     "dev": "nuxt",
