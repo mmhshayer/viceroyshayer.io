@@ -8,7 +8,7 @@
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24 slide-top"/></a>
               <nuxt-link to="/wechat" target="_blank"><img src="~assets/icons/socials/wechat.svg" class="w-24 slide-right"/></nuxt-link>
             </div>
-            <div class="bottom-4 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4 flip-in-hor-bottom">
+            <div class="bottom-4 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4 bounce-in-top">
               <a href="https://www.facebook.com/theviceroyshayer/"><img src="~assets/icons/socials/facebook.svg" class="w-10 h-10"/></a>
               <a href="https://www.instagram.com/viceroyshayer/"><img src="~assets/icons/socials/instagram.svg" class="w-10 h-10"/></a>
               <a href="https://twitter.com/viceroyshayer"><img src="~assets/icons/socials/twitter.svg" class="w-10 h-10"/></a>
