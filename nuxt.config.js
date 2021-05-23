@@ -211,22 +211,28 @@ export default {
   i18n: {
     locales: [
       {
-        code: 'es',
-        iso: 'en-ES',
-        name: 'Español',
-        file: 'es-es.json',
-      },
-      {
         code: 'en',
         iso: 'en-US',
         name: 'English',
         file: 'en-us.json',
       },
       {
-        code: 'fr',
-        iso: 'fr-fr',
-        name: 'Français',
-        file: 'fr-fr.json',
+        code: 'zh',
+        iso: 'zh-CN',
+        name: '中文',
+        file: 'zh-cn.json',
+      },
+      {
+        code: 'bn',
+        iso: 'bn-BD',
+        name: 'বাংলা',
+        file: 'bn-bd.json',
+      },
+      {
+        code: 'hi',
+        iso: 'hi-IN',
+        name: 'हिंदी',
+        file: 'hi-in.json',
       },
     ],
     defaultLocale: 'en',
