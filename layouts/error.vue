@@ -23,7 +23,10 @@
 <script>
   export default {
     props: ['error'],
-    layout: 'error'
+    layout: 'error',
+    head () {
+      return this.$nuxtI18nHead({ addSeoAttributes: true })
+    }
   }
 </script>
 

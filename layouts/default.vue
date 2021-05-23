@@ -10,5 +10,27 @@
   </body>
 </template>
 
+<script>
+  export default {
+    head () {
+      const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+      return {
+        htmlAttrs: {
+          myAttribute: 'My Value',
+          ...i18nHead.htmlAttrs
+        },
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My Custom Description'
+          },
+          ...i18nHead.meta
+        ],
+      }
+    }
+  }
+</script>
+
 <style>
 </style>
