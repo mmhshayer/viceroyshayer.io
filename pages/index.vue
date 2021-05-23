@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-30 fixed" id="mainFrame">
+    <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-20 fixed" id="mainFrame">
       <keep-alive>
         <div ref="box" class="boxShape">
           <img ref="img" :src="imgSrc" alt="fire" @click="clicked" class="animate-bounce">

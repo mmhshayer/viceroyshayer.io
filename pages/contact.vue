@@ -2,7 +2,6 @@
   <body>
     <section class="min-h-screen flex items-stretch text-white ">
         <div class="lg:flex w-1/2 hidden bg-pink-500 relative items-center">
-            <!-- <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             <div class="w-full px-24 z-10 flex space-x-24 justify-center">
               <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24 slide-left"/></a>
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24 slide-top"/></a>
