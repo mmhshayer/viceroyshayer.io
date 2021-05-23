@@ -1,0 +1,8 @@
+# ignore layout foo.vue
+layouts/list.vue
+layouts/post.vue
+
+# ignore page inside *some* folder
+pages/blog/*.vue
+pages/categories/*.vue
+pages/showcase/*.vue
