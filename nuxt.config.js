@@ -43,8 +43,6 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://color-mode.nuxtjs.org/
     '@nuxtjs/color-mode',
-    // github.com/nuxt-community/imagemin-module
-    '@nuxtjs/imagemin',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -175,11 +173,6 @@ export default {
         document.bodyText = mdToHtml;
       }
     },
-  },
-
-  // github.com/nuxt-community/imagemin-module
-  imagemin: {
-    enableInDev: true
   },
 
   // loading component
