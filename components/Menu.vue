@@ -13,6 +13,19 @@
         <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
         <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
         <a href="/assets/doc/mustakim13579@gmail.pdf" download="">Download CV</a>
+
+        <div class="flex flex-row w-full justify-center">
+          <ul
+            class="flex lang-switch justify-around text-bold text-3xl"
+            @click.prevent.stop="$i18n.setLocale(locale.code)"
+            v-for="locale in availableLocales" :key="locale.code"
+          >
+            <li class="pr-5">
+              {{ locale.name }}
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
@@ -43,6 +56,11 @@
       resetOnClick () {
         this.menu.componentId = 'icon-up';
         this.menu.isHidden = true;
+      }
+    },
+    computed: {
+      availableLocales () {
+        return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
       }
     }
   }
