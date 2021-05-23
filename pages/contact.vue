@@ -18,7 +18,7 @@
             </div>
             <div class="w-full py-6 z-20">
                 <h1 class="my-3 text-7xl font-semibold bounce-in-top">
-                  Contact
+                  {{ $t('contact') }}
                 </h1>
                 <a href="mailto:mustakim13579@mail.com" class="fade-in">{ mustakim13579@gmail.com }</a>
                 <h2 class="text-gray-100 text-2xl fade-in">
