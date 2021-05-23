@@ -108,9 +108,13 @@
         </ul>
       </div>
       <!-- tags -->
+      <div>
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-6xl font-extrabold leading-none">Programming Languages</h1>
+        <sub>(tag line)</sub>
+        <iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?viceroyshayer" frameborder="0"></iframe>
+      </div>
     </div>
-
-
 
   </div>
 </template>
