@@ -4,9 +4,9 @@
         <div class="lg:flex w-1/2 hidden bg-pink-500 relative items-center">
             <!-- <div class="absolute bg-black opacity-60 inset-0 z-0"></div> -->
             <div class="w-full px-24 z-10 flex space-x-24 justify-center">
-              <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24"/></a>
+              <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24 slide-left"/></a>
               <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24"/></a>
-              <nuxt-link to="/wechat" target="_blank"><img src="~assets/icons/socials/wechat.svg" class="w-24"/></nuxt-link>
+              <nuxt-link to="/wechat" target="_blank"><img src="~assets/icons/socials/wechat.svg" class="w-24 slide-right"/></nuxt-link>
             </div>
             <div class="bottom-4 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4">
               <a href="https://www.facebook.com/theviceroyshayer/"><img src="~assets/icons/socials/facebook.svg" class="w-10 h-10"/></a>
