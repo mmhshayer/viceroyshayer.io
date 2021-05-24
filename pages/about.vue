@@ -3,12 +3,7 @@
   <div class="bg-yellow-400">
     <div class="min-h-screen min-w-full z-0 grid place-items-center">
       <div
-        class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center"
-        data-aos="fade-up"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        >
+        class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center fade-in-top">
         <h1 class="my-3 text-7xl font-black">
           About
         </h1>
@@ -131,7 +126,7 @@
             v-for="(tag, i) in tags" :key="i"
             class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
             :style="{ backgroundColor: randomColor() }"
-            data-aos="zoom-out"
+            data-aos="zoom-in-up"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
@@ -145,7 +140,7 @@
       <!-- tags -->
       <div>
         <div
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
@@ -160,7 +155,7 @@
           <li
             v-for="(lang, i) in languages" :key="i"
             class="shadow-lg rounded-xl w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden"
-            data-aos="zoom-out"
+            data-aos="flip-up"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
@@ -202,14 +197,14 @@
           <h1 class="text-6xl font-extrabold leading-none">Programming Languages</h1>
           <sub>(tag line)</sub>
         </div>
-        <!-- <iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?viceroyshayer" frameborder="0"
-            data-aos="zoom-in"
+        <iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?viceroyshayer" frameborder="0"
+            data-aos="slide-up"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
             data-aos-mirror="true"
             data-aos-once="false"
-            ></iframe> -->
+            ></iframe>
       </div>
     </div>
 
@@ -410,36 +405,3 @@
     }
   }
 </style>
-
-<!--
-        languages: [
-          {
-            name: 'English',
-              scores : [
-                '80%',
-                '80%',
-                '80%',
-                '80%',
-              ]
-          },
-          {
-            name: 'Bangla',
-              scores : [
-                { 'asdc': 'apple' },
-                { 'adc' : 'orange' }
-              ]
-          },
-          {
-            name: 'Mandarin',
-              scores : [
-                '80%'
-              ]
-          },
-          {
-            name: 'Arabic',
-              scores : [
-                '80%'
-              ]
-          },
-        ]
-  -->
