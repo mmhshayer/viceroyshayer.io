@@ -9,12 +9,92 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'viceroyshayer.io',
+    title: 'MMH',
+    titleTemplate: '%s | viceroyshayer.io',
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Personal Website & Blog of - Mohammad Mustakim Hassan'
+      },
+      // Twitter
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@viceroyshayer' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://viceroyshayer.github.io',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'viceroyshayer.io',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Personal Website & Blog of - Mohammad Mustakim Hassan',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content:
+          'https://viceroyshayer.github.io/icon.png',
+      },
+
+      // Open Graph
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: '%s - viceroyshayer.io',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://viceroyshayer.github.io',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'viceroyshayer.io',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Personal Website & Blog of - Mohammad Mustakim Hassan',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+          'https://viceroyshayer.github.io/icon.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content:
+          'https://viceroyshayer.github.io/icon.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'viceroyshayer.io',
+      },
     ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -122,7 +202,7 @@ export default {
         file: 'hi-in.json',
       },
     ],
-    baseUrl: 'https://viceroyshayer.github.io/',
+    baseUrl: 'https://viceroyshayer.github.io',
     defaultLocale: 'en',
     strategy: 'no_prefix',
     lazy: true,

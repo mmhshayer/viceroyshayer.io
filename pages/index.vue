@@ -63,6 +63,11 @@
           }
         }
       }
+    },
+    head () {
+      return {
+        title: 'Welcome'
+      }
     }
   }
 </script>
