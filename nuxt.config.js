@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'viceroyshayer.github.io',
+    title: 'viceroyshayer.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -72,9 +72,14 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
-      icon: false,
-    }
+      description: 'Personal Website & Blog',
+      icon: true,
+    },
+    meta: [
+      { name: 'viceroyshayer' },
+      { author: 'Mohammad Mustakim Hassan' },
+      { theme_color: 'green' }
+    ],
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -89,10 +94,80 @@ export default {
     classSuffix: '-mode',
   },
 
+  // https://i18n.nuxtjs.org/setup
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en-us.json',
+      },
+      {
+        code: 'zh',
+        iso: 'zh-CN',
+        name: '中文',
+        file: 'zh-cn.json',
+      },
+      {
+        code: 'bn',
+        iso: 'bn-BD',
+        name: 'বাংলা',
+        file: 'bn-bd.json',
+      },
+      {
+        code: 'hi',
+        iso: 'hi-IN',
+        name: 'हिंदी',
+        file: 'hi-in.json',
+      },
+    ],
+    baseUrl: 'https://viceroyshayer.github.io/',
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: '~i18n/',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+  },
+
   // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
   sitemap: {
     hostname: 'https://viceroyshayer.github.io',
-    exclude: ['/404'],
+    exclude: [
+      '/404',
+    ],
+    gzip: true,
+    i18n: {
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US',
+          name: 'English',
+          file: 'en-us.json',
+        },
+        {
+          code: 'zh',
+          iso: 'zh-CN',
+          name: '中文',
+          file: 'zh-cn.json',
+        },
+        {
+          code: 'bn',
+          iso: 'bn-BD',
+          name: 'বাংলা',
+          file: 'bn-bd.json',
+        },
+        {
+          code: 'hi',
+          iso: 'hi-IN',
+          name: 'हिंदी',
+          file: 'hi-in.json',
+        },
+      ],
+      routesNameSeparator: '___'
+    },
     routes() {
       return getRoutes();
     },
@@ -100,8 +175,6 @@ export default {
 
   // https://github.com/nuxt-community/robots-module
   robots: {
-    UserAgent: '*',
-    Disallow: '/',
     Sitemap: 'https://viceroyshayer.github.io/sitemap.xml',
   },
 
@@ -205,45 +278,6 @@ export default {
         asset: '0%'
       }
     }
-  },
-
-  // https://i18n.nuxtjs.org/setup
-  i18n: {
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        file: 'en-us.json',
-      },
-      {
-        code: 'zh',
-        iso: 'zh-CN',
-        name: '中文',
-        file: 'zh-cn.json',
-      },
-      {
-        code: 'bn',
-        iso: 'bn-BD',
-        name: 'বাংলা',
-        file: 'bn-bd.json',
-      },
-      {
-        code: 'hi',
-        iso: 'hi-IN',
-        name: 'हिंदी',
-        file: 'hi-in.json',
-      },
-    ],
-    baseUrl: 'https://viceroyshayer.github.io/',
-    defaultLocale: 'en',
-    strategy: 'no_prefix',
-    lazy: true,
-    langDir: '~i18n/',
-    vueI18n: {
-      fallbackLocale: 'en',
-    },
-    seo: false
   },
 
 }
