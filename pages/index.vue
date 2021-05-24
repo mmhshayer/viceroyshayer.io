@@ -10,7 +10,7 @@
     <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center bg-purple-600">
       <div class="leading-8 font-bold">
         <h1 class="text-3xl">I'm</h1>
-        <h2 class="text-5xl">Mohammad Mustakim Hassan</h2>
+        <h2 class="text-4xl">Mohammad Mustakim Hassan</h2>
         <p class="text-3xl">Welcome to my Site</p>
         <sub class="text-xl">You got the fire {{ score }} times</sub>
       </div>
@@ -28,8 +28,8 @@
       return {
         score: 0,
         imgClicked: false,
-        bird: require('~/assets/webp/bird.webp'),
-        drone: require('~/assets/webp/drone.webp')
+        bird: require('~/assets/image/webp/bird.webp'),
+        drone: require('~/assets/image/webp/drone.webp')
       }
     },
     created() {

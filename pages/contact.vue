@@ -3,14 +3,14 @@
     <section class="min-h-screen flex items-stretch text-white ">
         <div class="lg:flex w-1/2 hidden bg-pink-500 relative items-center">
             <div class="w-full px-24 z-10 flex space-x-24 justify-center">
-              <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-24 slide-left"/></a>
-              <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-24 slide-top"/></a>
-              <nuxt-link to="/wechat" target="_blank"><img src="~assets/icons/socials/wechat.svg" class="w-24 slide-right"/></nuxt-link>
+              <a href="https://github.com/viceroyshayer"><img src="~assets/image/socials/github.svg" class="w-24 slide-left"/></a>
+              <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/image/socials/linkedin.svg" class="w-24 slide-top"/></a>
+              <nuxt-link to="/wechat" target="_blank"><img src="~assets/image/socials/wechat.svg" class="w-24 slide-right"/></nuxt-link>
             </div>
             <div class="bottom-4 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4 bounce-in-top">
-              <a href="https://www.facebook.com/theviceroyshayer/"><img src="~assets/icons/socials/facebook.svg" class="w-10 h-10"/></a>
-              <a href="https://www.instagram.com/viceroyshayer/"><img src="~assets/icons/socials/instagram.svg" class="w-10 h-10"/></a>
-              <a href="https://twitter.com/viceroyshayer"><img src="~assets/icons/socials/twitter.svg" class="w-10 h-10"/></a>
+              <a href="https://www.facebook.com/theviceroyshayer/"><img src="~assets/image/socials/facebook.svg" class="w-10 h-10"/></a>
+              <a href="https://www.instagram.com/viceroyshayer/"><img src="~assets/image/socials/instagram.svg" class="w-10 h-10"/></a>
+              <a href="https://twitter.com/viceroyshayer"><img src="~assets/image/socials/twitter.svg" class="w-10 h-10"/></a>
             </div>
         </div>
         <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0 bg-indigo-500">
@@ -49,9 +49,9 @@
                     <p class="text-base text-center" id="result">
                   </p>
                   <div class="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-12 lg:hidden flip-in-hor-bottom">
-                    <a href="https://github.com/viceroyshayer"><img src="~assets/icons/socials/github.svg" class="w-10 h-10"/></a>
-                    <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/icons/socials/linkedin.svg" class="w-10 h-10"/></a>
-                    <nuxt-link to="/wechat" target="_blank"><img src="~assets/icons/socials/wechat.svg" class="w-10 h-10"/></nuxt-link>
+                    <a href="https://github.com/viceroyshayer"><img src="~assets/image/socials/github.svg" class="w-10 h-10"/></a>
+                    <a href="https://www.linkedin.com/in/viceroyshayer/"><img src="~assets/image/socials/linkedin.svg" class="w-10 h-10"/></a>
+                    <nuxt-link to="/wechat" target="_blank"><img src="~assets/image/socials/wechat.svg" class="w-10 h-10"/></nuxt-link>
                   </div>
                 </form>
             </div>
