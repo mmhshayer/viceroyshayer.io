@@ -124,26 +124,17 @@ export default {
     '@nuxtjs/yandex-metrika',
     // https://github.com/nuxt-community/robots-module
     '@nuxtjs/robots',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://i18n.nuxtjs.org/setup
     'nuxt-i18n',
-    // https://www.npmjs.com/package/@nuxtjs/markdownit
-    '@nuxtjs/markdownit',
     // https://github.com/nuxt-community/feed-module
     '@nuxtjs/feed',
     // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
     '@nuxtjs/sitemap',
-    // https://nuxt-speedkit.grabarzundpartner.dev/setup
-    'nuxt-speedkit'
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -266,13 +257,6 @@ export default {
     trackHash: true,
   },
 
-  // https://www.npmjs.com/package/@nuxtjs/markdownit
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-  },
-
   // https://github.com/nuxt-community/feed-module
   feed: [
     {
@@ -326,34 +310,5 @@ export default {
 
   // loading component
   loading: '~/components/Loading.vue',
-
-  // https://nuxt-speedkit.grabarzundpartner.dev/setup
-  speedkit: {
-    speedkit: {
-      detection: {
-        performance: true,
-        browserSupport: true
-      },
-      performance: {
-        device: {
-          hardwareConcurrency: { min: 2, max: 48 },
-          deviceMemory: { min: 2 }
-        },
-        timing: {
-          fcp: 800,
-          dcl: 1200
-        },
-        lighthouseDetectionByUserAgent: false
-      },
-
-      componentAutoImport: false,
-      componentPrefix: undefined,
-
-      lazyOffset: {
-        component: '0%',
-        asset: '0%'
-      }
-    }
-  },
 
 }
