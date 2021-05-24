@@ -6,3 +6,6 @@ layouts/post.vue
 pages/blog/*.vue
 pages/categories/*.vue
 pages/showcase/*.vue
+
+# ignore components
+components/Global-Header.vue
