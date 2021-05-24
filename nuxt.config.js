@@ -101,7 +101,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/prism' },
     { src: '~/plugins/aos' }
   ],
 
@@ -122,8 +121,6 @@ export default {
   modules: [
     // https://github.com/nuxt-community/yandex-metrika-module
     '@nuxtjs/yandex-metrika',
-    // https://github.com/nuxt-community/robots-module
-    '@nuxtjs/robots',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
@@ -154,6 +151,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   },
 
   // https://color-mode.nuxtjs.org/#tailwind-v2
@@ -240,11 +238,6 @@ export default {
     },
   },
 
-  // https://github.com/nuxt-community/robots-module
-  robots: {
-    Sitemap: 'https://viceroyshayer.github.io/sitemap.xml',
-  },
-
   // https://yandex.com/support/metrica/code/counter-initialize.html
   yandexMetrika: {
     id: '77652091',
@@ -252,9 +245,6 @@ export default {
     clickmap: true,
     useCDN: false,
     trackLinks: true,
-    accurateTrackBounce: true,
-    childIframe: true,
-    trackHash: true,
   },
 
   // https://github.com/nuxt-community/feed-module
