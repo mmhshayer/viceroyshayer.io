@@ -282,22 +282,6 @@ export default {
     },
   ],
 
-  hooks: {
-    'content:file:beforeInsert': (document) => {
-
-      const md = require('markdown-it')();
-      if (document.extension === '.md') {
-
-        const { text } = require('reading-time')(document.text);
-
-        document.readingTime = text;
-
-        const mdToHtml = md.render(document.text);
-        document.bodyText = mdToHtml;
-      }
-    },
-  },
-
   // loading component
   loading: '~/components/Loading.vue',
 
