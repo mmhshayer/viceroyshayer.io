@@ -3,7 +3,7 @@
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-20 fixed" id="mainFrame">
       <keep-alive>
         <div ref="box" class="boxShape">
-          <img ref="img" :src="imgSrc" alt="fire" @click="clicked" class="animate-bounce">
+          <img ref="img" :src="imgSrc" alt="fire" @click="clicked" class="animate-bounce w-auto h-auto">
         </div>
       </keep-alive>
     </div>
@@ -28,6 +28,8 @@
       return {
         score: 0,
         imgClicked: false,
+        bird: require('~/assets/webp/bird.webp'),
+        drone: require('~/assets/webp/drone.webp')
       }
     },
     created() {
@@ -57,9 +59,9 @@
       imgSrc: function () {
         while (this.interval < 2000) {
           if (this.imgClicked == true) {
-            return 'https://media.giphy.com/media/3bzQoDRMrhq3BhQMhc/giphy.gif'
+            return this.bird
           } else {
-            return 'https://media.giphy.com/media/FmgGMOqDgbMR96YEi6/giphy.gif'
+            return this.drone
           }
         }
       }
