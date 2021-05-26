@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- bouncing game object on full screen div for refference -->
     <div ref="main" class="min-h-screen min-w-full top-0 left-0 z-20 fixed" id="mainFrame">
       <keep-alive>
         <div ref="box" class="boxShape">
@@ -7,6 +8,7 @@
         </div>
       </keep-alive>
     </div>
+    <!-- self introduction on the center of a full screen div for refference -->
     <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center bg-purple-600">
       <div class="leading-8 font-bold">
         <h1 class="text-3xl">I'm</h1>
@@ -87,16 +89,3 @@
     position: relative;
   }
 </style>
-
-<!--
-created() {
-  this.$nextTick(function () {
-    this.interval = setInterval(() => {
-      this.teleport()
-    }, 2000);
-  })
-},
-    background-image: url("~assets/image/blog-1.svg");
-
-    src="https://media.giphy.com/media/f6ytzUt63xVLDDzONe/giphy.gif"
--->
