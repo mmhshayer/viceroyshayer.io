@@ -1,12 +1,3 @@
-/* Throwing Colors to the page with variables */
-:root {
-  --background-color: #ebf4f1;
-  --secondary-background-color: #ddd;
-  --hover-color: #daf;
-  --primary-color: #091a28;
-}
-
-
 /* Throwing variables at the page */
 :root {
   --header-height: 12.5vh;

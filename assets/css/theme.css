@@ -1,3 +1,11 @@
+/* Throwing Colors to the page with variables */
+:root {
+  --background-color: #ebf4f1;
+  --secondary-background-color: #ddd;
+  --hover-color: #daf;
+  --primary-color: #091a28;
+}
+
 /* theme information */
 .dark-mode body {
   background-color: var(--background-color);
