@@ -1,0 +1,20 @@
+/* theme information */
+.dark-mode body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.light-mode body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.dark-mode {
+  --background-color: #091a28;
+  --secondary-background-color: #000;
+  --hover-color: #fad;
+  --primary-color: #ebf4f1;
+}
+/* class out of variables color */
+.secondary-bg-color {
+  background-color: var(--secondary-background-color);
+}

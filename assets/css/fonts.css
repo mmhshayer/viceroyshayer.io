@@ -1,0 +1,8 @@
+/* Header theme - temporary */
+@font-face {
+  font-family: 'Typeface';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('~assets/fonts/Celestial-Typeface.ttf') format('truetype');
+}

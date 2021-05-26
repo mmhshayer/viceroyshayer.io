@@ -96,6 +96,9 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/main',
+    '~/assets/css/fonts',
+    '~/assets/css/theme',
+    '~/assets/css/scroll-bar',
     '~/assets/css/static-animation',
   ],
 
