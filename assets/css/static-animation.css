@@ -40,6 +40,11 @@
 	        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+.color-change-2x {
+	-webkit-animation: color-change-2x 3s ease-in-out infinite alternate both;
+	        animation: color-change-2x 3s ease-in-out infinite alternate both;
+}
+
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
@@ -272,5 +277,22 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
   }
 }

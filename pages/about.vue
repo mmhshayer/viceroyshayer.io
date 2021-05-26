@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-20 flex flex-col w-full items-center text-center space-y-20 bg-yellow-400">
+  <div class="pb-20 flex flex-col w-full items-center text-center space-y-20 color-change-2x">
 
     <div class="min-h-screen min-w-full z-0 grid place-items-center">
       <div
