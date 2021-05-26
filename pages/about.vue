@@ -1,6 +1,6 @@
 <template>
-  <!-- full screner -->
-  <div class="bg-yellow-400">
+  <div class="pb-20 flex flex-col w-full items-center text-center space-y-20 bg-yellow-400">
+
     <div class="min-h-screen min-w-full z-0 grid place-items-center">
       <div
         class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center fade-in-top">
@@ -13,202 +13,201 @@
         <p class="text-gray-500">Freelance Developer</p>
       </div>
     </div>
-    <!-- flexed and centered -->
-    <div class="pb-20 flex flex-col w-full items-center text-center space-y-20">
-      <!-- timeline -->
-      <div class="flex flex-col inset-y-5">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in"
-          data-aos-mirror="true"
-          data-aos-once="false"
-        >
-          <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-6xl font-extrabold leading-none">Education</h1>
-          <sub>(timeline)</sub>
-        </div>
-        <div class="pt-10 timeline"
-              data-aos="fade-down"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-            <ul>
-              <li>
-                <div
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                >
-                    <div class="mb-3 mt-2 font-bold leading-3">2019 - 2023</div>
-                    <div class="font-bold text-3xl">Hubei University of Technology</div>
-                    <sub class="italic">Wuhan, Hubei, China</sub>
-                    <div class="italic font-semibold mb-3">B.Sc Computer Science</div>
-                    <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
-                </div>
-              </li>
-              <li>
-                <div
-                  data-aos="fade-left"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                >
-                    <div class="mb-3 mt-2 font-bold leading-3">2016 - 2017</div>
-                    <div class="font-bold text-3xl">Asia Pacific University of Technology & Innovation</div>
-                    <sub class="italic">Technology Park - 5, Kuala Lumpur, Malaysia</sub>
-                    <div class="italic font-semibold mb-3">B.Eng Mechatronics Engineering (dropped out)</div>
-                    <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
-                </div>
-              </li>
-              <li>
-                <div
-                  data-aos="fade-right"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                >
-                    <div class="mb-3 mt-2 font-bold leading-3">2012 - 2014</div>
-                    <div class="font-bold text-3xl">Notre Dame College</div>
-                    <sub class="italic md:mb-4">Motijheel, Dhaka, Bangladesh</sub>
-                    <div class="italic font-semibold mb-3">HSC &middot; Higher Secondary</div>
-                    <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
-                </div>
-              </li>
-              <li>
-                <div
-                  data-aos="fade-left"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                >
-                    <div class="mb-3 mt-2 font-bold leading-3">2012 - 2010</div>
-                    <div class="font-bold text-3xl">Dhaka Public School</div>
-                    <sub class="italic md:mb-4">Dhanmondi, Dhaka, Bangladesh</sub>
-                    <div class="italic font-semibold mb-3">SSC &middot; Secondary School</div>
-                    <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
-                </div>
-              </li>
-            </ul>
-          </div>
+
+    <!-- education -->
+    <div class="flex flex-col inset-y-5">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-6xl font-extrabold leading-none">Education</h1>
+        <sub>(timeline)</sub>
       </div>
-      <!-- timeline -->
-      <!-- work experiance -->
-      <!-- tags -->
-      <div class="px-20">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in"
-          data-aos-mirror="true"
-          data-aos-once="false"
-        >
-          <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-6xl font-extrabold leading-none">Skills</h1>
-          <sub>(tag button)</sub>
-        </div>
-        <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
-          <li
-            v-for="(tag, i) in tags" :key="i"
-            class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
-            :style="{ backgroundColor: randomColor() }"
-            data-aos="zoom-in-up"
+      <div class="pt-10 timeline"
+            data-aos="fade-down"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <nuxt-link to="#"> {{ tag }} </nuxt-link>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                  <div class="mb-3 mt-2 font-bold leading-3">2019 - 2023</div>
+                  <div class="font-bold text-3xl">Hubei University of Technology</div>
+                  <sub class="italic">Wuhan, Hubei, China</sub>
+                  <div class="italic font-semibold mb-3">B.Sc Computer Science</div>
+                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+              </div>
+            </li>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                  <div class="mb-3 mt-2 font-bold leading-3">2016 - 2017</div>
+                  <div class="font-bold text-3xl">Asia Pacific University of Technology & Innovation</div>
+                  <sub class="italic">Technology Park - 5, Kuala Lumpur, Malaysia</sub>
+                  <div class="italic font-semibold mb-3">B.Eng Mechatronics Engineering (dropped out)</div>
+                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+              </div>
+            </li>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                  <div class="mb-3 mt-2 font-bold leading-3">2012 - 2014</div>
+                  <div class="font-bold text-3xl">Notre Dame College</div>
+                  <sub class="italic md:mb-4">Motijheel, Dhaka, Bangladesh</sub>
+                  <div class="italic font-semibold mb-3">HSC &middot; Higher Secondary</div>
+                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+              </div>
+            </li>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
+                  <div class="mb-3 mt-2 font-bold leading-3">2012 - 2010</div>
+                  <div class="font-bold text-3xl">Dhaka Public School</div>
+                  <sub class="italic md:mb-4">Dhanmondi, Dhaka, Bangladesh</sub>
+                  <div class="italic font-semibold mb-3">SSC &middot; Secondary School</div>
+                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <!-- work experiance timeline -->
+    <!-- skills -->
+    <div class="px-20">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-6xl font-extrabold leading-none">Skills</h1>
+        <sub>(tag button)</sub>
       </div>
-      <!-- tags -->
-      <div>
-        <div
-          data-aos="fade-down"
+      <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
+        <li
+          v-for="(tag, i) in tags" :key="i"
+          class="rounded-full font-bold px-4 py-3 transition duration-300 ease-in-out"
+          :style="{ backgroundColor: randomColor() }"
+          data-aos="zoom-in-up"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-6xl font-extrabold leading-none">Languages</h1>
-          <sub>(tag line)</sub>
-        </div>
-        <ul class="py-10  grid grid-cols-1 md:grid-cols-2 gap-5">
-          <li
-            v-for="(lang, i) in languages" :key="i"
-            class="shadow-lg rounded-xl w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden"
-            data-aos="flip-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            >
-              <h3 class="text-gray-700 dark:text-white text-2xl font-light mb-4"
-              > {{ lang.name }} </h3>
-              <div>
-                <div v-for="(score, j) in lang.scores" :key="j">
-                  <div class="flex items-center justify-between text-gray-400 text-sm">
-                      <p>
-                        {{ score.name }}
-                      </p>
-                      <p>
-                        {{ score.value }}
-                      </p>
-                  </div>
-                  <div class="w-full h-5 bg-green-100 rounded-full mb-4">
-                    <div class="h-full text-center text-xs text-white bg-green-400 rounded-full" :style="{ width: score.value }">
-                    </div>
+          <nuxt-link to="#"> {{ tag }} </nuxt-link>
+        </li>
+      </ul>
+    </div>
+    <!-- languages -->
+    <div>
+      <div
+        data-aos="fade-down"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-6xl font-extrabold leading-none">Languages</h1>
+        <sub>(tag line)</sub>
+      </div>
+      <ul class="py-10  grid grid-cols-1 md:grid-cols-2 gap-5">
+        <li
+          v-for="(lang, i) in languages" :key="i"
+          class="shadow-lg rounded-xl w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden"
+          data-aos="flip-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
+            <h3 class="text-gray-700 dark:text-white text-2xl font-light mb-4"
+            > {{ lang.name }} </h3>
+            <div>
+              <div v-for="(score, j) in lang.scores" :key="j">
+                <div class="flex items-center justify-between text-gray-400 text-sm">
+                    <p>
+                      {{ score.name }}
+                    </p>
+                    <p>
+                      {{ score.value }}
+                    </p>
+                </div>
+                <div class="w-full h-5 bg-green-100 rounded-full mb-4">
+                  <div class="h-full text-center text-xs text-white bg-green-400 rounded-full" :style="{ width: score.value }">
                   </div>
                 </div>
               </div>
-          </li>
-        </ul>
+            </div>
+        </li>
+      </ul>
+    </div>
+     <!-- github language pie chart + possible future extention to git profile data -->
+    <!--  // the ifreme pie chart is too big for the screen and fked up the layout
+    <div>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
+        <h1 class="text-6xl font-extrabold leading-none">Programming Languages</h1>
+        <sub>(tag line)</sub>
       </div>
-      <!-- tags -->
-      <div>
-        <div
-          data-aos="fade-up"
+      <iframe width="350" height="350" src="https://ionicabizau.github.io/github-profile-languages/api.html?viceroyshayer" frameborder="0"
+          data-aos="slide-up"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
           data-aos-mirror="true"
           data-aos-once="false"
-        >
-          <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-          <h1 class="text-6xl font-extrabold leading-none">Programming Languages</h1>
-          <sub>(tag line)</sub>
-        </div>
-        <iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?viceroyshayer" frameborder="0"
-            data-aos="slide-up"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            ></iframe>
-      </div>
+          ></iframe>
     </div>
-
+  -->
   </div>
+
 </template>
 
 <script>
