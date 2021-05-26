@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col h-auto fixed z-40">
-    <button @click="toggleMenu" aria-label="Menu Button" accesskey="m" title="(Alt + M)" class="z-50 absolute self-center pt-3 menu-botton">
+    <button @click="toggleMenu" aria-label="Menu Button" accesskey="m" title="(Alt + M)" class="z-50 absolute self-center pt-3 menu-botton animate-bounce">
       <keep-alive>
         <component :is="menu.componentId" class="pt-1 w-6 h-8"></component>
       </keep-alive>
