@@ -11,10 +11,10 @@
     <!-- self introduction on the center of a full screen div for refference -->
     <div class="min-h-screen min-w-full top-0 left-0 z-10 fixed grid place-items-center">
       <div class="pl-8 leading-8 font-bold">
-        <h1 class="text-3xl">I'm</h1>
-        <h2 class="text-4xl">Mohammad Mustakim Hassan</h2>
-        <p class="text-3xl">Welcome to my Site</p>
-        <sub class="text-xl">You got the fire {{ score }} times</sub>
+        <h1 class="text-3xl">{{ $t('atim') }}</h1>
+        <h2 class="text-4xl">{{ $t('thename') }}</h2>
+        <p class="text-3xl">{{ $t('atwlcm') }}</p>
+        <sub class="text-xl">{{ $t('atscore') }}: {{ score }}</sub>
       </div>
     </div>
 
