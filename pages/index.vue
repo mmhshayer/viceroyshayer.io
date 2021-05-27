@@ -20,7 +20,7 @@
 
     <div class="min-h-screen min-w-full top-0 left-0 z-0 fixed grid place-items-center">
       <div class="sky-container">
-        <div v-for="i in 20" :key="i" class="star"></div>
+        <div v-for="i in 33" :key="i" class="star"></div>
       </div>
     </div>
 
@@ -99,7 +99,7 @@
 
   .sky-container {
     width: 50%;
-    height: 50%;
+    height: 90%;
     transform: rotateZ(45deg);
   }
 
