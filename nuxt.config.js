@@ -177,18 +177,18 @@ export default {
         name: '中文',
         file: 'zh-cn.json',
       },
-      {
-        code: 'bn',
-        iso: 'bn-BD',
-        name: 'বাংলা',
-        file: 'bn-bd.json',
-      },
-      {
-        code: 'hi',
-        iso: 'hi-IN',
-        name: 'हिंदी',
-        file: 'hi-in.json',
-      },
+      // {
+      //   code: 'bn',
+      //   iso: 'bn-BD',
+      //   name: 'বাংলা',
+      //   file: 'bn-bd.json',
+      // },
+      // {
+      //   code: 'hi',
+      //   iso: 'hi-IN',
+      //   name: 'हिंदी',
+      //   file: 'hi-in.json',
+      // },
     ],
     baseUrl: 'https://viceroyshayer.github.io',
     defaultLocale: 'en',
@@ -206,7 +206,7 @@ export default {
     exclude: [
       '/404',
     ],
-    gzip: true,
+    // gzip: true,
     i18n: {
       locales: [
         {
@@ -221,18 +221,18 @@ export default {
           name: '中文',
           file: 'zh-cn.json',
         },
-        {
-          code: 'bn',
-          iso: 'bn-BD',
-          name: 'বাংলা',
-          file: 'bn-bd.json',
-        },
-        {
-          code: 'hi',
-          iso: 'hi-IN',
-          name: 'हिंदी',
-          file: 'hi-in.json',
-        },
+        // {
+        //   code: 'bn',
+        //   iso: 'bn-BD',
+        //   name: 'বাংলা',
+        //   file: 'bn-bd.json',
+        // },
+        // {
+        //   code: 'hi',
+        //   iso: 'hi-IN',
+        //   name: 'हिंदी',
+        //   file: 'hi-in.json',
+        // },
       ],
       routesNameSeparator: '___'
     },
