@@ -134,6 +134,8 @@ export default {
     '@nuxtjs/feed',
     // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
     '@nuxtjs/sitemap',
+    // https://nuxt-speedkit.grabarzundpartner.dev/setup
+    'nuxt-speedkit'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -287,5 +289,35 @@ export default {
 
   // loading component
   loading: '~/components/Loading.vue',
+
+  // https://nuxt-speedkit.grabarzundpartner.dev/setup
+  speedkit: {
+    speedkit: {
+      detection: {
+        performance: true,
+        browserSupport: true
+      },
+      performance: {
+        device: {
+          hardwareConcurrency: { min: 2, max: 48 },
+          deviceMemory: { min: 2 }
+        },
+        timing: {
+          fcp: 800,
+          dcl: 1200
+        },
+        lighthouseDetectionByUserAgent: false
+      },
+
+      componentAutoImport: false,
+      componentPrefix: undefined,
+
+      lazyOffset: {
+        component: '0%',
+        asset: '0%'
+      }
+    }
+  },
+
 
 }
