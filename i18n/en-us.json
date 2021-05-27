@@ -12,5 +12,8 @@
   "ctemailadd" : "Email Address",
   "ctphoneno" : "Phone Number",
   "cturmassage" : "Your Message",
-  "ctsend" : "Send Message"
+  "ctsend" : "Send Message",
+  "atedu" : "Education",
+  "atskil" : "Skill",
+  "atlang" : "Language"
 }

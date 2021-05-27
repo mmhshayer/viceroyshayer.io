@@ -5,11 +5,11 @@
       <div
         class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center fade-in-top">
         <h1 class="my-3 text-7xl font-black">
-          About
+          {{ $t('mtabout') }}
         </h1>
         <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
         <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Mohammad Mustakim Hassan</h2>
+        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">{{ $t('thename') }}</h2>
         <p class="text-gray-500">Freelance Developer</p>
       </div>
     </div>
@@ -25,7 +25,7 @@
         data-aos-once="false"
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-6xl font-extrabold leading-none">Education</h1>
+        <h1 class="text-6xl font-extrabold leading-none">{{ $t('atedu') }}</h1>
         <sub>(timeline)</sub>
       </div>
       <div class="pt-10 timeline"
@@ -116,7 +116,7 @@
         data-aos-once="false"
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-6xl font-extrabold leading-none">Skills</h1>
+        <h1 class="text-6xl font-extrabold leading-none">{{ $t('atskil') }}</h1>
         <sub>(tag button)</sub>
       </div>
       <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
@@ -146,7 +146,7 @@
         data-aos-once="false"
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
-        <h1 class="text-6xl font-extrabold leading-none">Languages</h1>
+        <h1 class="text-6xl font-extrabold leading-none">{{ $t('atlang') }}</h1>
         <sub>(tag line)</sub>
       </div>
       <ul class="py-10  grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -239,7 +239,7 @@
         ],
         languages: [
           {
-            name: 'Bangla',
+            name: 'বাংলা',
             message: 'Native',
             scores : [
               {
@@ -283,7 +283,7 @@
             ]
           },
           {
-            name: 'Mandarin Chinese',
+            name: '中文',
             message: 'Learning',
             scores : [
               {
@@ -305,7 +305,7 @@
             ]
           },
           {
-            name: 'Hindi',
+            name: 'हिंदी',
             message: 'Pasively Acquired',
             scores : [
               {

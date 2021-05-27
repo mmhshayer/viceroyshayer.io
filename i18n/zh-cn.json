@@ -12,5 +12,8 @@
   "ctemailadd" : "电子邮件地址",
   "ctphoneno" : "电话号码",
   "cturmassage" : "你的信息",
-  "ctsend" : "发信息"
+  "ctsend" : "发信息",
+  "atedu" : "教育",
+  "atskil" : "技能",
+  "atlang" : "语"
 }
