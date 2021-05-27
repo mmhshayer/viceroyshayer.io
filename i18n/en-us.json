@@ -2,5 +2,11 @@
   "mthome" : "Home",
   "mtabout" : "About",
   "mtcontact" : "Contact",
-  "mtdownloadcv" : "Download CV"
+  "mtdownloadcv" : "Download CV",
+  "ctor" : "OR",
+  "ctfullname" : "Full Name",
+  "ctemailadd" : "Email Address",
+  "ctphoneno" : "Phone Number",
+  "cturmassage" : "Your Message",
+  "ctsend" : "Send Message"
 }

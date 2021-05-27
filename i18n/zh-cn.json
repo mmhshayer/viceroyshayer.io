@@ -2,5 +2,11 @@
   "mthome" : "主页",
   "mtabout" : "轮廓",
   "mtcontact" : "接触",
-  "mtdownloadcv" : "下载简历"
+  "mtdownloadcv" : "下载简历",
+  "ctor" : "或者",
+  "ctfullname" : "全名",
+  "ctemailadd" : "电子邮件地址",
+  "ctphoneno" : "电话号码",
+  "cturmassage" : "你的信息",
+  "ctsend" : "发信息"
 }
