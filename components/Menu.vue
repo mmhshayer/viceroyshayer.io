@@ -9,10 +9,10 @@
     <div class="h-screen w-full opacity-90 hidden" :class="{'makeVisible': !menu.isHidden}">
       <div class="flex flex-col w-full justify-center menu-items">
         <Theme-Switch class="self-center"/>
-        <nuxt-link to="/" @click.native="resetOnClick">Home</nuxt-link>
-        <nuxt-link to="/about" @click.native="resetOnClick">About</nuxt-link>
-        <nuxt-link to="/contact" @click.native="resetOnClick">Contact</nuxt-link>
-        <a href="/assets/doc/mustakim13579@gmail.pdf" download="">Download CV</a>
+        <nuxt-link to="/" @click.native="resetOnClick">{{ $t('mthome') }}</nuxt-link>
+        <nuxt-link to="/about" @click.native="resetOnClick">{{ $t('mtabout') }}</nuxt-link>
+        <nuxt-link to="/contact" @click.native="resetOnClick">{{ $t('mtcontact') }}</nuxt-link>
+        <a href="/assets/doc/mustakim13579@gmail.pdf" download="">{{ $t('mtdownloadcv') }} CV</a>
 
         <div class="flex flex-row w-full justify-center">
           <ul

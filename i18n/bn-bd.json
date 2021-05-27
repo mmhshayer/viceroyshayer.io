@@ -1,4 +1,6 @@
 {
-  "welcome" : "francewelcome",
-  "contact" : "যোগাযোগ"
+  "mthome" : "হোম",
+  "mtabout" : "সম্পর্কিত",
+  "mtcontact" : "যোগাযোগ",
+  "mtdownloadcv" : "ডাউনলোড সিভি"
 }

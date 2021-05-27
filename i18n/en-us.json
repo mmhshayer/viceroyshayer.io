@@ -1,4 +1,6 @@
 {
-  "welcome" : "Welcome",
-  "contact" : "Contact"
+  "mthome" : "Home",
+  "mtabout" : "About",
+  "mtcontact" : "Contact",
+  "mtdownloadcv" : "Download CV"
 }
