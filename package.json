@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/color-mode": "^2.0.8",
+    "@nuxtjs/color-mode": "^2.0.9",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/yandex-metrika": "^1.3.0",
     "aos": "^2.3.4",
-    "core-js": "^3.12.1",
+    "core-js": "^3.13.0",
     "nuxt": "^2.15.6",
     "nuxt-i18n": "^6.27.0",
     "nuxt-speedkit": "^1.2.5"
