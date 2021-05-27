@@ -7,10 +7,10 @@
         <h1 class="my-3 text-7xl font-black">
           {{ $t('mtabout') }}
         </h1>
-        <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+        <p class="leading-relaxed text-lg">{{ $t('atmainbio') }}</p>
         <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">{{ $t('thename') }}</h2>
-        <p class="text-gray-500">Freelance Developer</p>
+        <p class="text-gray-500">{{ $t('atselftitle') }}</p>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-6xl font-extrabold leading-none">{{ $t('atedu') }}</h1>
-        <sub>(timeline)</sub>
+        <sub>{{ $t('atedusub') }}</sub>
       </div>
       <div class="pt-10 timeline"
             data-aos="fade-down"
@@ -47,10 +47,10 @@
                 data-aos-once="false"
               >
                   <div class="mb-3 mt-2 font-bold leading-3">2019 - 2023</div>
-                  <div class="font-bold text-3xl">Hubei University of Technology</div>
-                  <sub class="italic">Wuhan, Hubei, China</sub>
-                  <div class="italic font-semibold mb-3">B.Sc Computer Science</div>
-                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+                  <div class="font-bold text-3xl">{{ $t('atuni') }}</div>
+                  <sub class="italic">{{ $t('atuniloc') }}</sub>
+                  <div class="italic font-semibold mb-3">{{ $t('atunicou') }}</div>
+                  <summary class="mb-10">{{ $t('atunidesc') }}</summary>
               </div>
             </li>
             <li>
@@ -117,7 +117,7 @@
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-6xl font-extrabold leading-none">{{ $t('atskil') }}</h1>
-        <sub>(tag button)</sub>
+        <sub>{{ $t('atskilsub') }}</sub>
       </div>
       <ul class="py-10 px-5 md:px-24 lg:px-72 flex flex-row flex-wrap space-x-2 space-y-2 justify-center">
         <li
@@ -147,7 +147,7 @@
       >
         <hr class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6">
         <h1 class="text-6xl font-extrabold leading-none">{{ $t('atlang') }}</h1>
-        <sub>(tag line)</sub>
+        <sub>{{ $t('atlangsub') }}</sub>
       </div>
       <ul class="py-10  grid grid-cols-1 md:grid-cols-2 gap-5">
         <li
