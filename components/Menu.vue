@@ -12,7 +12,7 @@
         <nuxt-link to="/" @click.native="resetOnClick">{{ $t('mthome') }}</nuxt-link>
         <nuxt-link to="/about" @click.native="resetOnClick">{{ $t('mtabout') }}</nuxt-link>
         <nuxt-link to="/contact" @click.native="resetOnClick">{{ $t('mtcontact') }}</nuxt-link>
-        <a href="/assets/doc/mustakim13579@gmail.pdf" download="">{{ $t('mtdownloadcv') }} CV</a>
+        <a href="/mustakim13579@gmail.pdf" download="">{{ $t('mtdownloadcv') }} CV</a>
 
         <div class="flex flex-row w-full justify-center">
           <ul
