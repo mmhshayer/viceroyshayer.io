@@ -97,8 +97,11 @@ export default {
   css: [
     '~/assets/css/main',
     '~/assets/css/fonts',
+    '~/assets/css/stars',
     '~/assets/css/theme',
     '~/assets/css/scroll-bar',
+    '~/assets/css/shooting-stars',
+    '~/assets/css/index-animation',
     '~/assets/css/static-animation',
   ],
 
