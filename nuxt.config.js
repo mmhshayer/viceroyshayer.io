@@ -1,5 +1,3 @@
-import getRoutes from "./utils/getRoutes";
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -128,17 +126,9 @@ export default {
     // https://github.com/nuxt-community/yandex-metrika-module
     '@nuxtjs/yandex-metrika',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
+    '@nuxtjs/pwa',,
     // https://i18n.nuxtjs.org/setup
     'nuxt-i18n',
-    // https://github.com/nuxt-community/feed-module
-    '@nuxtjs/feed',
-    // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
-    '@nuxtjs/sitemap',
-    // https://nuxt-speedkit.grabarzundpartner.dev/setup
-    'nuxt-speedkit'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -153,9 +143,6 @@ export default {
       { theme_color: 'green' }
     ],
   },
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -205,47 +192,6 @@ export default {
     },
   },
 
-  // https://www.npmjs.com/package/@nuxtjs/sitemap#installation
-  sitemap: {
-    hostname: 'https://viceroyshayer.github.io',
-    exclude: [
-      '/404',
-    ],
-    // gzip: true,
-    i18n: {
-      locales: [
-        {
-          code: 'en',
-          iso: 'en-US',
-          name: 'English',
-          file: 'en-us.json',
-        },
-        {
-          code: 'zh',
-          iso: 'zh-CN',
-          name: '中文',
-          file: 'zh-cn.json',
-        },
-        // {
-        //   code: 'bn',
-        //   iso: 'bn-BD',
-        //   name: 'বাংলা',
-        //   file: 'bn-bd.json',
-        // },
-        // {
-        //   code: 'hi',
-        //   iso: 'hi-IN',
-        //   name: 'हिंदी',
-        //   file: 'hi-in.json',
-        // },
-      ],
-      routesNameSeparator: '___'
-    },
-    routes() {
-      return getRoutes();
-    },
-  },
-
   // https://yandex.com/support/metrica/code/counter-initialize.html
   yandexMetrika: {
     id: '77652091',
@@ -254,73 +200,4 @@ export default {
     useCDN: false,
     trackLinks: true,
   },
-
-  // https://github.com/nuxt-community/feed-module
-  feed: [
-    {
-
-      path: '/feed.xml',
-      async create(feed) {
-        feed.options = {
-          title: 'Viceroys Blog',
-          description: 'Personal WEbsite and Blog',
-          link: 'https://viceroyshayer.github.io/feed.xml',
-        };
-
-        const { $content } = require('@nuxt/content');
-
-        const posts = await $content('blog').fetch();
-
-        posts.forEach((post) => {
-
-          const url = `https://viceroyshayer.github.io/blog/${post.slug}`;
-
-          feed.addItem({
-            title: post.title,
-            id: url,
-            link: url,
-            description: post.blurb,
-            content: post.bodyText,
-          });
-        });
-      },
-
-      cacheTime: 1000 * 60 * 15,
-      type: 'rss2',
-    },
-  ],
-
-  // loading component
-  loading: '~/components/Loading.vue',
-
-  // https://nuxt-speedkit.grabarzundpartner.dev/setup
-  speedkit: {
-    speedkit: {
-      detection: {
-        performance: true,
-        browserSupport: true
-      },
-      performance: {
-        device: {
-          hardwareConcurrency: { min: 2, max: 48 },
-          deviceMemory: { min: 2 }
-        },
-        timing: {
-          fcp: 800,
-          dcl: 1200
-        },
-        lighthouseDetectionByUserAgent: false
-      },
-
-      componentAutoImport: false,
-      componentPrefix: undefined,
-
-      lazyOffset: {
-        component: '0%',
-        asset: '0%'
-      }
-    }
-  },
-
-
 }

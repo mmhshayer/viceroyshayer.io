@@ -1,10 +1,2 @@
-# ignore layout foo.vue
-layouts/list.vue
-layouts/post.vue
-
 # ignore page inside *some* folder
 pages/x.vue
-pages/showcase/*.vue
-
-# ignore components
-components/Global-Header.vue
