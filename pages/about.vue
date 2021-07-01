@@ -47,10 +47,10 @@
                 data-aos-once="false"
               >
                   <div class="mb-3 mt-2 font-bold leading-3">2019 - 2023</div>
-                  <div class="font-bold text-3xl">{{ $t('atuni') }}</div>
-                  <sub class="italic">{{ $t('atuniloc') }}</sub>
-                  <div class="italic font-semibold mb-3">{{ $t('atunicou') }}</div>
-                  <summary class="mb-10">{{ $t('atunidesc') }}</summary>
+                  <div class="font-bold text-3xl">{{ $t('atedu-4-name') }}</div>
+                  <sub class="italic">{{ $t('atedu-4-loc') }}</sub>
+                  <div class="italic font-semibold mb-3">{{ $t('atedu-4-cou') }}</div>
+                  <summary class="mb-10">{{ $t('atedu-4-desc') }}</summary>
               </div>
             </li>
             <li>
@@ -63,10 +63,10 @@
                 data-aos-once="false"
               >
                   <div class="mb-3 mt-2 font-bold leading-3">2016 - 2017</div>
-                  <div class="font-bold text-3xl">Asia Pacific University of Technology & Innovation</div>
-                  <sub class="italic">Technology Park - 5, Kuala Lumpur, Malaysia</sub>
-                  <div class="italic font-semibold mb-3">B.Eng Mechatronics Engineering (dropped out)</div>
-                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+                  <div class="font-bold text-3xl">{{ $t('atedu-3-name') }}</div>
+                  <sub class="italic">{{ $t('atedu-3-loc') }}</sub>
+                  <div class="italic font-semibold mb-3">{{ $t('atedu-3-cou') }}</div>
+                  <summary class="mb-10">{{ $t('atedu-3-desc') }}</summary>
               </div>
             </li>
             <li>
@@ -79,10 +79,10 @@
                 data-aos-once="false"
               >
                   <div class="mb-3 mt-2 font-bold leading-3">2012 - 2014</div>
-                  <div class="font-bold text-3xl">Notre Dame College</div>
-                  <sub class="italic md:mb-4">Motijheel, Dhaka, Bangladesh</sub>
-                  <div class="italic font-semibold mb-3">HSC &middot; Higher Secondary</div>
-                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+                  <div class="font-bold text-3xl">{{ $t('atedu-2-name') }}</div>
+                  <sub class="italic">{{ $t('atedu-2-loc') }}</sub>
+                  <div class="italic font-semibold mb-3">{{ $t('atedu-2-cou') }}</div>
+                  <summary class="mb-10">{{ $t('atedu-2-desc') }}</summary>
               </div>
             </li>
             <li>
@@ -95,10 +95,10 @@
                 data-aos-once="false"
               >
                   <div class="mb-3 mt-2 font-bold leading-3">2012 - 2010</div>
-                  <div class="font-bold text-3xl">Dhaka Public School</div>
-                  <sub class="italic md:mb-4">Dhanmondi, Dhaka, Bangladesh</sub>
-                  <div class="italic font-semibold mb-3">SSC &middot; Secondary School</div>
-                  <summary class="mb-10">Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis, consectetur sed elit sed, vestibulum ultrices nibh.</summary>
+                  <div class="font-bold text-3xl">{{ $t('atedu-1-name') }}</div>
+                  <sub class="italic">{{ $t('atedu-1-loc') }}</sub>
+                  <div class="italic font-semibold mb-3">{{ $t('atedu-1-cou') }}</div>
+                  <summary class="mb-10">{{ $t('atedu-1-desc') }}</summary>
               </div>
             </li>
           </ul>
