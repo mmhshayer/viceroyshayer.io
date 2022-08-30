@@ -182,7 +182,7 @@ export default {
       //   file: 'hi-in.json',
       // },
     ],
-    baseUrl: 'https://viceroyshayer.github.io',
+    baseUrl: 'https://mmhshayer.github.io/viceroyshayer.io/',
     defaultLocale: 'en',
     strategy: 'no_prefix',
     lazy: true,
